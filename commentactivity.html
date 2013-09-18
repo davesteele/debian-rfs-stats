@@ -25,7 +25,7 @@ function plotcomments( data, textstatus, jqXHR ) {
     }
 
     var plot = $.plot("#commentplot",
-           [commentSeries], 
+           [commentSeries],
            {
                xaxis: {
                         axisLabel: 'Age (days)',
@@ -59,13 +59,13 @@ function plotcomments( data, textstatus, jqXHR ) {
             if (item) {
                 if (previousPoint != item.dataIndex) {
                     previousPoint = item.dataIndex;
-                    
+
                     $("#tooltip").remove();
                     var x = new Date(item.datapoint[0] + 5*3600*1000),
                         y = item.datapoint[1].toFixed(0);
 
                     x = (x.getMonth()+1) + "/" + (-100+x.getYear());
-                    
+
                     showTooltip(item.pageX, item.pageY,
                                 extraRFSInfo[item.dataIndex][1]);
                     //showTooltip(item.pageX, item.pageY,
@@ -74,7 +74,7 @@ function plotcomments( data, textstatus, jqXHR ) {
             }
             else {
                 $("#tooltip").remove();
-                previousPoint = null;            
+                previousPoint = null;
             }
     });
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
 </head>
 <body>
 
-Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> comment activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/datestats.csv">raw</a>)<br><br>
+Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> comment activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/rfsdata.csv">raw</a>)<br><br>
 Click/hover on a data point to get additional information.<br>
 <div id='commentplot' style="width:800px;height:500px"></div>
 
