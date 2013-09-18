@@ -39,7 +39,7 @@ class RFS(object):
     def __init__(self, bugnum, bug_url=BUG_URL):
         self.bugnum = bugnum
 
-        self.raw = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url).split('\n')
+        self.raw = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url+bugnum).split('\n')
 
     def isDropped(self):
         srch = re.compile('Package .+ has been removed from mentors.')
