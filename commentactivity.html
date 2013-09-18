@@ -1,0 +1,117 @@
+<html<head>
+<title>Comment Activity</title>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.time.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.axislabels.js"></script>
+<script type="text/javascript">
+
+var extraRFSInfo = []
+function plotcomments( data, textstatus, jqXHR ) {
+    var commentSeries = {
+        //label: "comments",
+        data: [],
+    };
+
+    for(var i=0; i<data.length; i++) {
+
+        if( data[i].state == 'open' ) {
+            commentSeries.data.push( [data[i].age/86400, data[i].comments] );
+
+            var number = data[i].number;
+            var name = data[i].name;
+            extraRFSInfo.push( [number, name] );
+        }
+    }
+
+    var plot = $.plot("#commentplot",
+           [commentSeries], 
+           {
+               xaxis: {
+                        axisLabel: 'Age (days)',
+                        transform: function (v) { return Math.log(v); },
+                        inverseTransform: function (v) { return Math.exp(v); }
+                      },
+               yaxis: { axisLabel: 'Number of Comments' },
+               legend: {position: "nw"},
+               grid: {hoverable: true, clickable: true },
+               series: { lines: { show: false }, points: { show: true } }
+           })
+
+    function showTooltip(x, y, contents) {
+        $('<div id="tooltip">' + contents + '</div>').css( {
+            position: 'absolute',
+            display: 'none',
+            top: y + 5,
+            left: x + 5,
+            border: '1px solid #fdd',
+            padding: '2px',
+            'background-color': '#fee',
+            opacity: 0.80
+        }).appendTo("body").fadeIn(200);
+    }
+
+    var previousPoint = null;
+    $("#commentplot").bind("plothover", function (event, pos, item) {
+        $("#x").text(pos.x.toFixed(2));
+        $("#y").text(pos.y.toFixed(2));
+
+            if (item) {
+                if (previousPoint != item.dataIndex) {
+                    previousPoint = item.dataIndex;
+                    
+                    $("#tooltip").remove();
+                    var x = new Date(item.datapoint[0] + 5*3600*1000),
+                        y = item.datapoint[1].toFixed(0);
+
+                    x = (x.getMonth()+1) + "/" + (-100+x.getYear());
+                    
+                    showTooltip(item.pageX, item.pageY,
+                                extraRFSInfo[item.dataIndex][1]);
+                    //showTooltip(item.pageX, item.pageY,
+                   //             item.series.label + " for " + x + " = " + y);
+                }
+            }
+            else {
+                $("#tooltip").remove();
+                previousPoint = null;            
+            }
+    });
+
+    $("#commentplot").bind("plotclick", function (event, pos, item) {
+        if (item) {
+            var startdate = item.datapoint[0];
+            var enddate;
+            if(item.dataIndex >= item.series.data.length -1) {
+                enddate = startdate + (31 * 3600 * 24 * 1000);
+            } else {
+                enddate= item.series.data[item.dataIndex + 1][0]
+            }
+            var state = item.series.label;
+            //$("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ":" + item.datapoint[1] + ".");
+            //plot.highlight(item.series, item.datapoint);
+
+
+            number = extraRFSInfo[item.dataIndex][0]
+            window.location = "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=" + number
+        }
+    });
+
+}
+
+$(document).ready(function() {
+    $.getJSON('data/rfsdata.json', plotcomments);
+} )
+</script>
+</head>
+<body>
+
+Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> comment activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/datestats.csv">raw</a>)<br><br>
+Click/hover on a data point to get additional information.<br>
+<div id='commentplot' style="width:800px;height:500px"></div>
+
+
+
+
+</body>
+</html>

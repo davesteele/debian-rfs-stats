@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>RFS Monthly Detail</title>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="include/purl.js"></script>
+<script type="text/javascript">
+
+function formRFSLine( num, name ) {
+    var result = "<a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=" + num + "\">" + num + " - " + name + "</a>" + "<br>\n";
+
+    return( result );
+}
+
+function newReport( data, start, end ) {
+    var text = "<br><br>New Packages<br>\n";
+
+    for( var i=0; i < data.length; i++ ) {
+        var dateOpened = data[i].openUnix;
+        if( dateOpened > start && dateOpened < end ) {
+            text += formRFSLine( data[i].number, data[i].name );
+        }
+    }
+
+    return(text);
+}
+
+function closeReport( data, start, end, state ) {
+    var text = "<br><br>" + state + " Packages<br>\n";
+
+    for( var i=0; i < data.length; i++ ) {
+        var dateOpened = data[i].openUnix;
+        var dateClosed = data[i].closedUnix;
+        if( dateClosed > start && dateClosed < end && data[i].state == state) {
+            text += formRFSLine( data[i].number, data[i].name );
+        }
+    }
+
+    return(text);
+}
+
+
+function openReport( data, start, end ) {
+    var text = "<br><br>Open Packages<br>\n";
+
+    for( var i=0; i < data.length; i++ ) {
+        var dateOpened = data[i].openUnix;
+        var dateClosed = data[i].closedUnix;
+        if( dateOpened < end && (dateClosed > end || dateClosed == 0 ) ) {
+            text += formRFSLine( data[i].number, data[i].name );
+        }
+    }
+
+    return(text);
+}
+
+
+function layoutpage( data, textstatus, jqXHR ) {
+    var start = $.url().param('start') / 1000;
+    var end = $.url().param('end') / 1000;
+
+    var theDate = new Date( (start+5*3600) * 1000 );
+
+    var months = [ '', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
+    $('#monthdate').text( months[theDate.getMonth()+1] + " " + (theDate.getYear() + 1900)  )
+
+    //$('#datatarget').append( formRFSLine( '123', 'foo' )  + formRFSLine( '123', 'foo' ));
+    $('#datatarget').append( newReport( data, start, end));
+    $('#datatarget').append( closeReport( data, start, end, 'accepted'));
+    $('#datatarget').append( closeReport( data, start, end, 'dropped'));
+    $('#datatarget').append( openReport( data, start, end));
+}
+
+$(document).ready(function() {
+    $.getJSON('data/rfsdata.json', layoutpage);
+} )
+
+
+</script>
+</head>
+<body>
+RFS activity for the month of <span id='monthdate'>unknown</span> (<a href="data/rfsdata.csv">raw data</a>).<br>
+ 
+
+
+<div id="datatarget"></div>
+</body>
+</html>
