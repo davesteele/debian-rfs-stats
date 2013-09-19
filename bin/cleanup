@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+import os
+import re
+
+basedir = "./tmp"
+
+for fl in os.listdir(basedir):
+    ffl = os.path.join( basedir, fl )
+    if not re.search( "Bug is archived. ", open( ffl, 'r' ).read() ):
+        print "Deleting %s" % ffl
+        os.unlink( ffl )
+
+
