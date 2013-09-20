@@ -12,4 +12,9 @@ for fl in os.listdir(basedir):
         print "Deleting %s" % ffl
         os.unlink( ffl )
 
+thelist = os.path.join( basedir, "rfslist.cache" )
+if os.access( thelist, os.R_OK ):
+    print "Deleting", thelist
+    os.unlink( thelist )
+
 
