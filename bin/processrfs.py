@@ -199,7 +199,7 @@ csvfl.close()
 
 output = open( 'data/rfsdata.json', 'w')
 
-output.write(json.dumps( rfslist ))
+output.write(json.dumps(rfslist, sort_keys=True, indent=2))
 
 output.close()
 
@@ -301,7 +301,7 @@ for dtu in monthIter(firstu, lastu):
 
 
 output = open( 'data/datestats.json', 'w')
-output.write(json.dumps( entryList ))
+output.write(json.dumps(entryList, sort_keys=True, indent=2))
 output.close()
 
 
