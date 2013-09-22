@@ -8,18 +8,27 @@
 
 var extraRFSInfo = []
 function plotcomments( data, textstatus, jqXHR ) {
+    var rfslist = data['rfslist'];
+    var runDate = data['runDate'];
+    var runUnix = data['runUnix'];
+
     var commentSeries = {
         //label: "comments",
         data: [],
     };
 
-    for(var i=0; i<data.length; i++) {
+    for(var i=0; i<rfslist.length; i++) {
 
-        if( data[i].state == 'open' ) {
-            commentSeries.data.push( [data[i].age/86400, data[i].comments] );
+        if( rfslist[i].state == 'open' ) {
+            var age = runUnix - rfslist[i].openUnix;
 
-            var number = data[i].number;
-            var name = data[i].name;
+            if(age < 86400) {
+                age = 86400;
+            }
+            commentSeries.data.push( [age/86400, rfslist[i].comments] );
+
+            var number = rfslist[i].number;
+            var name = rfslist[i].name;
             extraRFSInfo.push( [number, name] );
         }
     }

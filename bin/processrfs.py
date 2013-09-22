@@ -144,7 +144,7 @@ class RFS(object):
 
 
 csvfl = open('data/rfsdata.csv', 'w')
-csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, age, state, comments, lastcomment, lastUnix\n" )
+csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, state, comments, lastcomment, lastUnix\n" )
 
 
 rfslist = []
@@ -155,7 +155,7 @@ for rfsnum in RFSList():
     rfs = RFS(rfsnum)
 
 
-    age = max( time.time() - rfs.dateOpened()[1], 86400 )
+    #age = max( time.time() - rfs.dateOpened()[1], 86400 )
     lastcomment = [x for x in rfs.comments()][-1]
 
     entry = {
@@ -165,7 +165,6 @@ for rfsnum in RFSList():
               'openUnix':   rfs.dateOpened()[1],
               'closedStr':  rfs.dateClosed()[0],
               'closedUnix': rfs.dateClosed()[1],
-              'age':        age,
               'state':      rfs.state(),
               'comments':   rfs.numComments(),
               'lastcomment': lastcomment.datestr,
@@ -182,7 +181,6 @@ for rfsnum in RFSList():
               str(rfs.dateOpened()[1]),
               rfs.dateClosed()[0],
               str(rfs.dateClosed()[1]),
-              str(age),
               rfs.state(),
               str(rfs.numComments()),
               lastcomment.datestr,
@@ -197,9 +195,19 @@ for rfsnum in RFSList():
 
 csvfl.close()
 
+todaydate = email.utils.formatdate(time.mktime(datetime.datetime.now().timetuple()))
+todayunix = time.time()
+
+jsonstruct = {
+
+               'runDate': todaydate,
+               'runUnix': todayunix,
+               'rfslist': rfslist,
+             }
+
 output = open( 'data/rfsdata.json', 'w')
 
-output.write(json.dumps(rfslist, sort_keys=True, indent=2))
+output.write(json.dumps(jsonstruct, sort_keys=True, indent=2))
 
 output.close()
 
