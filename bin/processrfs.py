@@ -11,6 +11,14 @@ import email.utils
 import json
 import sys
 
+from BeautifulSoup import BeautifulSoup
+from collections import namedtuple
+
+import HTMLParser
+_htmlparser = HTMLParser.HTMLParser()
+unescape = _htmlparser.unescape
+
+
 RFS_URL="http://bugs.debian.org/cgi-bin/pkgreport.cgi?package=sponsorship-requests&archive=both"
 
 BUG_URL="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug="
@@ -109,9 +117,34 @@ class RFS(object):
 
         return( pkgName )
 
+    def comments(self):
+
+        f = open( 'tmp/rfs%s.cache' % self.bugnum )
+        text = f.read()
+        soup = BeautifulSoup( text )
+
+        Comment = namedtuple( 'Comment', 'bugnum sender datestr, dateu' )
+        commentdivs = [x for x in soup.findAll('div', attrs={'class': 'headers'})]
+        for commentdiv in commentdivs:
+            for headerdiv in commentdiv.findAll('div', attrs={'class': 'header'}):
+
+                header = headerdiv.span.string
+                contents = unescape(headerdiv.contents[1])
+                #print header, contents
+                if 'From:' in header:
+                    fromstr = contents
+                if 'Date:' in header:
+                    datestr = contents
+
+            dateu = time.mktime(email.utils.parsedate(datestr))
+
+            comment = Comment(self.bugnum, fromstr, datestr, dateu)
+
+            yield comment
+
 
 csvfl = open('data/rfsdata.csv', 'w')
-csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, age, state, comments\n" )
+csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, age, state, comments, lastcomment, lastUnix\n" )
 
 
 rfslist = []
@@ -123,6 +156,7 @@ for rfsnum in RFSList():
 
 
     age = max( time.time() - rfs.dateOpened()[1], 86400 )
+    lastcomment = [x for x in rfs.comments()][-1]
 
     entry = {
               'number':     rfsnum,
@@ -134,6 +168,8 @@ for rfsnum in RFSList():
               'age':        age,
               'state':      rfs.state(),
               'comments':   rfs.numComments(),
+              'lastcomment': lastcomment.datestr,
+              'lastUnix': lastcomment.dateu,
             }
 
     rfslist.append(entry)
@@ -149,6 +185,8 @@ for rfsnum in RFSList():
               str(age),
               rfs.state(),
               str(rfs.numComments()),
+              lastcomment.datestr,
+              str(lastcomment.dateu),
 
               ] ) \
             + "\""
