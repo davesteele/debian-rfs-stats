@@ -58,16 +58,18 @@ function layoutpage( data, textstatus, jqXHR ) {
     var start = $.url().param('start') / 1000;
     var end = $.url().param('end') / 1000;
 
+    var rfslist = data['rfslist']
+
     var theDate = new Date( (start+5*3600) * 1000 );
 
     var months = [ '', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
     $('#monthdate').text( months[theDate.getMonth()+1] + " " + (theDate.getYear() + 1900)  )
 
     //$('#datatarget').append( formRFSLine( '123', 'foo' )  + formRFSLine( '123', 'foo' ));
-    $('#datatarget').append( newReport( data, start, end));
-    $('#datatarget').append( closeReport( data, start, end, 'accepted'));
-    $('#datatarget').append( closeReport( data, start, end, 'dropped'));
-    $('#datatarget').append( openReport( data, start, end));
+    $('#datatarget').append( newReport( rfslist, start, end));
+    $('#datatarget').append( closeReport( rfslist, start, end, 'accepted'));
+    $('#datatarget').append( closeReport( rfslist, start, end, 'dropped'));
+    $('#datatarget').append( openReport( rfslist, start, end));
 }
 
 $(document).ready(function() {
