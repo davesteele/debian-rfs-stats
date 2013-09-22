@@ -218,7 +218,7 @@ def addmonth(dtu):
 
 class monthIter(object):
     def __init__(self, firstu, lastu):
-        print firstu, lastu
+        #print firstu, lastu
         firstdt = datetime.datetime.utcfromtimestamp(firstu)
         startdt = datetime.datetime( firstdt.year, firstdt.month, 1, 0,0,0,0, pytz.utc )
         self.startu = calendar.timegm(startdt.timetuple())
@@ -229,7 +229,7 @@ class monthIter(object):
         dtu = self.startu
 
         while dtu < self.lastu:
-            print dtu
+            #print dtu
             yield dtu
             dtu = addmonth(dtu)
 
