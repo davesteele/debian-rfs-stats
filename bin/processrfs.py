@@ -121,6 +121,9 @@ for rfsnum in RFSList():
 
     rfs = RFS(rfsnum)
 
+
+    age = max( time.time() - rfs.dateOpened()[1], 86400 )
+
     entry = {
               'number':     rfsnum,
               'name':       rfs.pkgName(),
@@ -128,7 +131,7 @@ for rfsnum in RFSList():
               'openUnix':   rfs.dateOpened()[1],
               'closedStr':  rfs.dateClosed()[0],
               'closedUnix': rfs.dateClosed()[1],
-              'age':        time.time() - rfs.dateOpened()[1],
+              'age':        age,
               'state':      rfs.state(),
               'comments':   rfs.numComments(),
             }
@@ -143,7 +146,7 @@ for rfsnum in RFSList():
               str(rfs.dateOpened()[1]),
               rfs.dateClosed()[0],
               str(rfs.dateClosed()[1]),
-              str(time.time() - rfs.dateOpened()[1]),
+              str(age),
               rfs.state(),
               str(rfs.numComments()),
 
