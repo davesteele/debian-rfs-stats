@@ -47,7 +47,10 @@ class RFS(object):
     def __init__(self, bugnum, bug_url=BUG_URL):
         self.bugnum = bugnum
 
-        self.raw = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url+bugnum).split('\n')
+        text = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url+bugnum)
+        self.raw = text.split('\n')
+
+        self.soup = BeautifulSoup( text )
 
     def isDropped(self):
         srch = re.compile('Package .+ has been removed from mentors.')
@@ -119,12 +122,9 @@ class RFS(object):
 
     def comments(self):
 
-        f = open( 'tmp/rfs%s.cache' % self.bugnum )
-        text = f.read()
-        soup = BeautifulSoup( text )
-
         Comment = namedtuple( 'Comment', 'bugnum sender datestr, dateu' )
-        commentdivs = [x for x in soup.findAll('div', attrs={'class': 'headers'})]
+        commentdivs = self.soup.findAll('div', attrs={'class': 'headers'})
+
         for commentdiv in commentdivs:
             for headerdiv in commentdiv.findAll('div', attrs={'class': 'header'}):
 
@@ -141,6 +141,13 @@ class RFS(object):
             comment = Comment(self.bugnum, fromstr, datestr, dateu)
 
             yield comment
+
+    def submitter(self):
+        sender = self.soup.find('div', attrs={'class': 'header'} ).contents[1]
+        sender = sender.strip()
+        sender = unescape( sender )
+
+        return( sender )
 
 
 csvfl = open('data/rfsdata.csv', 'w')
