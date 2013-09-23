@@ -52,6 +52,10 @@ class RFS(object):
 
         self.soup = BeautifulSoup( text )
 
+        self.submitter = self._submitter()
+
+        self.closed = self._isClosed()
+
     def isDropped(self):
         srch = re.compile('Package .+ has been removed from mentors.')
         return(bool([x for x in self.raw if srch.search(x)]))
@@ -64,7 +68,7 @@ class RFS(object):
         # previous isAccepted()
         return(self.isClosed() and not self.isDropped())
 
-    def isClosed(self):
+    def _isClosed(self):
         srch = re.compile('<strong>Bug reopened</strong>|%s\-done|%s\-close'
                           % (self.bugnum, self.bugnum))
 
@@ -80,6 +84,9 @@ class RFS(object):
 
         return( '-done' in matches[-1] or '-close' in matches[-1] )
         #return(bool([x for x in self.raw if srch.search(x)]))
+
+    def isClosed(self):
+        return( self.closed )
 
     def isOpen(self):
         return(not self.isClosed())
@@ -129,7 +136,7 @@ class RFS(object):
             for headerdiv in commentdiv.findAll('div', attrs={'class': 'header'}):
 
                 header = headerdiv.span.string
-                contents = unescape(headerdiv.contents[1])
+                contents = unescape(headerdiv.contents[1]).strip()
                 #print header, contents
                 if 'From:' in header:
                     fromstr = contents
@@ -142,7 +149,7 @@ class RFS(object):
 
             yield comment
 
-    def submitter(self):
+    def _submitter(self):
         sender = self.soup.find('div', attrs={'class': 'header'} ).contents[1]
         sender = sender.strip()
         sender = unescape( sender )
@@ -150,8 +157,16 @@ class RFS(object):
         return( sender )
 
 
+    def lastComment(self):
+        return( [x for x in self.comments()][-1] )
+
+    def readyForReview(self):
+        print self.submitter, self.lastComment().sender
+        return( self.isOpen() and self.submitter == self.lastComment().sender )
+
+
 csvfl = open('data/rfsdata.csv', 'w')
-csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, state, comments, lastcomment, lastUnix\n" )
+csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, state, comments, lastcomment, lastUnix, readyForReview\n" )
 
 
 rfslist = []
@@ -176,8 +191,10 @@ for rfsnum in RFSList():
               'comments':   rfs.numComments(),
               'lastcomment': lastcomment.datestr,
               'lastUnix': lastcomment.dateu,
+              'readyForReview': rfs.readyForReview(),
             }
 
+    print rfs.readyForReview()
     rfslist.append(entry)
 
     csvline = "\"" + \
@@ -192,6 +209,7 @@ for rfsnum in RFSList():
               str(rfs.numComments()),
               lastcomment.datestr,
               str(lastcomment.dateu),
+              str(rfs.readyForReview()),
 
               ] ) \
             + "\""
