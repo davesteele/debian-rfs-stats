@@ -161,7 +161,7 @@ class RFS(object):
         return( [x for x in self.comments()][-1] )
 
     def readyForReview(self):
-        print self.submitter, self.lastComment().sender
+        #print self.submitter, self.lastComment().sender
         return( self.isOpen() and self.submitter == self.lastComment().sender )
 
 
@@ -194,7 +194,7 @@ for rfsnum in RFSList():
               'readyForReview': rfs.readyForReview(),
             }
 
-    print rfs.readyForReview()
+    #print rfs.readyForReview()
     rfslist.append(entry)
 
     csvline = "\"" + \
