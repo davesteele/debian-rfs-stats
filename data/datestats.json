@@ -209,24 +209,24 @@
     "year": 2013
   }, 
   {
-    "accepted": 4, 
+    "accepted": 2, 
     "dateStr": "08/2013", 
     "dropped": 3, 
     "endu": 1377993600, 
     "month": 8, 
-    "new": 33, 
+    "new": 31, 
     "open": 129, 
     "startu": 1375315200, 
     "year": 2013
   }, 
   {
-    "accepted": 11, 
+    "accepted": 13, 
     "dateStr": "09/2013", 
-    "dropped": 8, 
+    "dropped": 26, 
     "endu": 1380585600, 
     "month": 9, 
-    "new": 33, 
-    "open": 143, 
+    "new": 36, 
+    "open": 126, 
     "startu": 1377993600, 
     "year": 2013
   }
