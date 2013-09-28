@@ -20,11 +20,25 @@ $.urlParam = function(name){
 
 function makecell( field, label, sortfield, sortorder ) {
     var currentorder = 'a';
-
     if( field == sortfield && sortorder != 'r' )
         currentorder = 'r'
 
-    return("<th><a href=\"?field=" + field + "&order=" + currentorder + "\">" + label + "</a></th>");
+    var strongstart = "";
+    var strongend = "";
+    if( field == sortfield ) {
+        strongstart = "<b><big>";
+        strongend = "</big></b>";
+    }
+
+    return("<th><a href=\"?field=" +
+                   field +
+                  "&order=" +
+                   currentorder +
+                "\">" +
+                strongstart +
+                    label +
+                strongend +
+            "</a></th>");
 }
 
 function byReady(a, b) {
