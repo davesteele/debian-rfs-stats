@@ -7515,17 +7515,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1368261460.0, 
-      "lastcomment": "Sat, 11 May 2013 04:37:40 +0000", 
+      "closedStr": "Wed, 25 Sep 2013 16:23:32 +0000", 
+      "closedUnix": 1380140612.0, 
+      "comments": 3, 
+      "lastUnix": 1380140612.0, 
+      "lastcomment": "Wed, 25 Sep 2013 16:23:32 +0000", 
       "name": "nfsen/1.3.6p1-1", 
       "number": "707163", 
       "openStr": "Tue,  7 May 2013 20:30:01 UTC", 
       "openUnix": 1367973001.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "", 
@@ -7554,17 +7554,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1368170761.0, 
-      "lastcomment": "Fri, 10 May 2013 03:26:01 +0200", 
+      "closedStr": "Fri, 27 Sep 2013 16:24:40 +0000", 
+      "closedUnix": 1380313480.0, 
+      "comments": 2, 
+      "lastUnix": 1380313480.0, 
+      "lastcomment": "Fri, 27 Sep 2013 16:24:40 +0000", 
       "name": "java-gnome/4.1.3-1", 
       "number": "707664", 
       "openStr": "Fri, 10 May 2013 01:30:02 UTC", 
       "openUnix": 1368163802.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "", 
@@ -7931,19 +7931,6 @@
       "state": "open"
     }, 
     {
-      "closedStr": "Wed, 28 Aug 2013 16:57:37 +0200", 
-      "closedUnix": 1377723457.0, 
-      "comments": 3, 
-      "lastUnix": 1377723457.0, 
-      "lastcomment": "Wed, 28 Aug 2013 16:57:37 +0200", 
-      "name": "zeitgeist-explorer/0.2-1~mentors2", 
-      "number": "712946", 
-      "openStr": "Fri, 21 Jun 2013 05:54:02 UTC", 
-      "openUnix": 1371808442.0, 
-      "readyForReview": false, 
-      "state": "accepted"
-    }, 
-    {
       "closedStr": "", 
       "closedUnix": 0, 
       "comments": 6, 
@@ -8063,14 +8050,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1375497197.0, 
-      "lastcomment": "Fri, 2 Aug 2013 22:33:17 +0100", 
-      "name": "bitz-server/0.1.4-1", 
+      "comments": 5, 
+      "lastUnix": 1380403024.0, 
+      "lastcomment": "Sat, 28 Sep 2013 17:17:04 +0100", 
+      "name": "bitz-server/0.1.6-1", 
       "number": "715023", 
       "openStr": "Fri,  5 Jul 2013 14:24:02 UTC", 
       "openUnix": 1373048642.0, 
-      "readyForReview": false, 
+      "readyForReview": true, 
       "state": "open"
     }, 
     {
@@ -8635,14 +8622,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1379464617.0, 
-      "lastcomment": "Tue, 17 Sep 2013 20:36:57 +0100", 
-      "name": "vpcs/0.4b2-1", 
+      "comments": 8, 
+      "lastUnix": 1380382818.0, 
+      "lastcomment": "Sat, 28 Sep 2013 11:40:18 +0300", 
+      "name": "vpcs/0.5b0-1", 
       "number": "721080", 
       "openStr": "Tue, 27 Aug 2013 18:18:02 UTC", 
       "openUnix": 1377641882.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -8724,17 +8711,17 @@
       "state": "dropped"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1380069103.0, 
-      "lastcomment": "Tue, 24 Sep 2013 20:31:43 +0200", 
+      "closedStr": "Thu, 26 Sep 2013 07:00:32 +0200", 
+      "closedUnix": 1380193232.0, 
+      "comments": 3, 
+      "lastUnix": 1380193232.0, 
+      "lastcomment": "Thu, 26 Sep 2013 07:00:32 +0200", 
       "name": "doublecmd/0.5.6-1", 
       "number": "721497", 
       "openStr": "Sun,  1 Sep 2013 10:51:07 UTC", 
       "openUnix": 1378047067.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "accepted"
     }, 
     {
       "closedStr": "", 
@@ -8763,17 +8750,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 8, 
-      "lastUnix": 1379787346.0, 
-      "lastcomment": "Sat, 21 Sep 2013 14:15:46 +0200", 
-      "name": "musl/0.9.13-2", 
+      "closedStr": "Sat, 28 Sep 2013 10:43:03 +0200", 
+      "closedUnix": 1380379383.0, 
+      "comments": 11, 
+      "lastUnix": 1380379383.0, 
+      "lastcomment": "Sat, 28 Sep 2013 10:43:03 +0200", 
+      "name": "musl/0.9.14-1", 
       "number": "721839", 
       "openStr": "Wed,  4 Sep 2013 13:57:01 UTC", 
       "openUnix": 1378317421.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Sun, 22 Sep 2013 17:09:16 -0700", 
@@ -8830,9 +8817,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1379897174.0, 
-      "lastcomment": "Sun, 22 Sep 2013 20:46:14 +0200", 
+      "comments": 5, 
+      "lastUnix": 1380227108.0, 
+      "lastcomment": "Thu, 26 Sep 2013 16:25:08 +0200", 
       "name": "totem-plugin-arte/3.2.1-1", 
       "number": "722432", 
       "openStr": "Tue, 10 Sep 2013 23:00:01 UTC", 
@@ -8999,9 +8986,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1379986983.0, 
-      "lastcomment": "Mon, 23 Sep 2013 21:43:03 +0200", 
+      "comments": 6, 
+      "lastUnix": 1380148200.0, 
+      "lastcomment": "Wed, 25 Sep 2013 18:30:00 +0200", 
       "name": "metar/0.2", 
       "number": "723582", 
       "openStr": "Tue, 17 Sep 2013 16:03:06 UTC", 
@@ -9012,14 +8999,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 5, 
-      "lastUnix": 1379763921.0, 
-      "lastcomment": "Sat, 21 Sep 2013 07:45:21 -0400 (EDT)", 
+      "comments": 6, 
+      "lastUnix": 1380236945.0, 
+      "lastcomment": "Thu, 26 Sep 2013 19:09:05 +0200", 
       "name": "worklog/1.8-7", 
       "number": "723626", 
       "openStr": "Wed, 18 Sep 2013 04:03:02 UTC", 
       "openUnix": 1379491382.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -9142,14 +9129,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1379987067.0, 
-      "lastcomment": "Mon, 23 Sep 2013 21:44:27 +0200", 
+      "comments": 2, 
+      "lastUnix": 1380167695.0, 
+      "lastcomment": "Wed, 25 Sep 2013 23:54:55 +0200", 
       "name": "swftools/0.9.2+git20130725-1", 
       "number": "724333", 
       "openStr": "Mon, 23 Sep 2013 19:48:02 UTC", 
       "openUnix": 1379980082.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -9168,17 +9155,82 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1380078098.0, 
-      "lastcomment": "Tue, 24 Sep 2013 23:01:38 +0100", 
+      "comments": 3, 
+      "lastUnix": 1380169212.0, 
+      "lastcomment": "Thu, 26 Sep 2013 00:20:12 +0100", 
       "name": "psocksxx/0.0.1-1", 
       "number": "724539", 
       "openStr": "Tue, 24 Sep 2013 22:03:01 UTC", 
       "openUnix": 1380074581.0, 
       "readyForReview": true, 
       "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1380231114.0, 
+      "lastcomment": "Thu, 26 Sep 2013 17:31:54 +0200", 
+      "name": "osgearth/2.4.0+dfsg-6", 
+      "number": "724616", 
+      "openStr": "Wed, 25 Sep 2013 19:27:02 UTC", 
+      "openUnix": 1380151622.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1380221289.0, 
+      "lastcomment": "Thu, 26 Sep 2013 14:48:09 +0200", 
+      "name": "pgrouting/2.0.0-1", 
+      "number": "724670", 
+      "openStr": "Thu, 26 Sep 2013 12:51:01 UTC", 
+      "openUnix": 1380214261.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1380377132.0, 
+      "lastcomment": "Sat, 28 Sep 2013 10:05:32 +0200", 
+      "name": "dxsamples/4.2.0-2", 
+      "number": "724757", 
+      "openStr": "Fri, 27 Sep 2013 15:12:02 UTC", 
+      "openUnix": 1380309122.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1380334241.0, 
+      "lastcomment": "Fri, 27 Sep 2013 22:10:41 +0200", 
+      "name": "gogglesmm/0.12.7-2", 
+      "number": "724791", 
+      "openStr": "Fri, 27 Sep 2013 20:15:02 UTC", 
+      "openUnix": 1380327302.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1380382191.0, 
+      "lastcomment": "Sat, 28 Sep 2013 11:29:51 +0200", 
+      "name": "yt/2013.09.28-1", 
+      "number": "724807", 
+      "openStr": "Sat, 28 Sep 2013 06:51:02 UTC", 
+      "openUnix": 1380365462.0, 
+      "readyForReview": false, 
+      "state": "open"
     }
   ], 
-  "runDate": "Wed, 25 Sep 2013 04:35:26 -0000", 
-  "runUnix": 1380083726.496042
+  "runDate": "Sat, 28 Sep 2013 19:39:22 -0000", 
+  "runUnix": 1380397162.468475
 }

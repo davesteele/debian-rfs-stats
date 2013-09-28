@@ -192,8 +192,8 @@
     "dropped": 1, 
     "endu": 1372636800, 
     "month": 6, 
-    "new": 22, 
-    "open": 82, 
+    "new": 21, 
+    "open": 81, 
     "startu": 1370044800, 
     "year": 2013
   }, 
@@ -204,12 +204,12 @@
     "endu": 1375315200, 
     "month": 7, 
     "new": 21, 
-    "open": 103, 
+    "open": 102, 
     "startu": 1372636800, 
     "year": 2013
   }, 
   {
-    "accepted": 2, 
+    "accepted": 1, 
     "dateStr": "08/2013", 
     "dropped": 3, 
     "endu": 1377993600, 
@@ -220,13 +220,13 @@
     "year": 2013
   }, 
   {
-    "accepted": 13, 
+    "accepted": 15, 
     "dateStr": "09/2013", 
-    "dropped": 26, 
+    "dropped": 28, 
     "endu": 1380585600, 
     "month": 9, 
-    "new": 36, 
-    "open": 126, 
+    "new": 41, 
+    "open": 127, 
     "startu": 1377993600, 
     "year": 2013
   }
