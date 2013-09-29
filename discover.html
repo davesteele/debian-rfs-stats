@@ -93,8 +93,8 @@ function maketable(data, textstatus, jqXHR) {
 
     for(var i=0; i<rfslist.length; i++) {
         if(rfslist[i].state == "open") {
-            pkg_age = Math.floor( (runUnix - rfslist[i].openUnix)/86400 );
-            cmt_age = Math.floor( (runUnix - rfslist[i].lastUnix)/86400 );
+            pkg_age = Math.max(0, Math.floor( (runUnix - rfslist[i].openUnix)/86400 ));
+            cmt_age = Math.max(0, Math.floor( (runUnix - rfslist[i].lastUnix)/86400 ));
             tabletext += "<tr><td>" + 
                          "<a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=" + rfslist[i].number + "\">" + 
                              rfslist[i].number + "</td><td>" +
