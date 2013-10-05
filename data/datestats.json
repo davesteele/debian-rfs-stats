@@ -77,9 +77,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 23, 
+    "accepted": 26, 
     "dateStr": "08/2012", 
-    "dropped": 10, 
+    "dropped": 7, 
     "endu": 1346457600, 
     "month": 8, 
     "new": 35, 
@@ -88,9 +88,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 28, 
+    "accepted": 29, 
     "dateStr": "09/2012", 
-    "dropped": 13, 
+    "dropped": 12, 
     "endu": 1349049600, 
     "month": 9, 
     "new": 33, 
@@ -99,9 +99,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 19, 
+    "accepted": 21, 
     "dateStr": "10/2012", 
-    "dropped": 21, 
+    "dropped": 19, 
     "endu": 1351728000, 
     "month": 10, 
     "new": 28, 
@@ -132,9 +132,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 9, 
+    "accepted": 15, 
     "dateStr": "01/2013", 
-    "dropped": 19, 
+    "dropped": 13, 
     "endu": 1359676800, 
     "month": 1, 
     "new": 23, 
@@ -165,9 +165,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 13, 
+    "accepted": 23, 
     "dateStr": "04/2013", 
-    "dropped": 28, 
+    "dropped": 18, 
     "endu": 1367366400, 
     "month": 4, 
     "new": 20, 
@@ -176,9 +176,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 26, 
+    "accepted": 29, 
     "dateStr": "05/2013", 
-    "dropped": 20, 
+    "dropped": 17, 
     "endu": 1370044800, 
     "month": 5, 
     "new": 64, 
@@ -187,9 +187,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 10, 
+    "accepted": 11, 
     "dateStr": "06/2013", 
-    "dropped": 16, 
+    "dropped": 15, 
     "endu": 1372636800, 
     "month": 6, 
     "new": 40, 
@@ -198,9 +198,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 19, 
+    "accepted": 23, 
     "dateStr": "07/2013", 
-    "dropped": 17, 
+    "dropped": 13, 
     "endu": 1375315200, 
     "month": 7, 
     "new": 38, 
@@ -209,9 +209,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 25, 
+    "accepted": 28, 
     "dateStr": "08/2013", 
-    "dropped": 12, 
+    "dropped": 9, 
     "endu": 1377993600, 
     "month": 8, 
     "new": 47, 
@@ -220,9 +220,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 16, 
+    "accepted": 18, 
     "dateStr": "09/2013", 
-    "dropped": 30, 
+    "dropped": 28, 
     "endu": 1380585600, 
     "month": 9, 
     "new": 47, 
@@ -231,13 +231,13 @@
     "year": 2013
   }, 
   {
-    "accepted": 0, 
+    "accepted": 1, 
     "dateStr": "10/2013", 
     "dropped": 0, 
     "endu": 1383264000, 
     "month": 10, 
-    "new": 0, 
-    "open": 130, 
+    "new": 4, 
+    "open": 133, 
     "startu": 1380585600, 
     "year": 2013
   }
