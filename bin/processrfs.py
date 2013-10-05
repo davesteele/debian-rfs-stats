@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+
 import urllib
 import re
 import os
@@ -10,6 +11,8 @@ import pytz
 import email.utils
 import json
 import sys
+import gzip
+import apt_pkg
 
 from BeautifulSoup import BeautifulSoup
 from collections import namedtuple
@@ -18,16 +21,36 @@ import HTMLParser
 _htmlparser = HTMLParser.HTMLParser()
 unescape = _htmlparser.unescape
 
+apt_pkg.init_config()
+apt_pkg.init_system()
 
 RFS_URL="http://bugs.debian.org/cgi-bin/pkgreport.cgi?package=sponsorship-requests&archive=both"
 
 BUG_URL="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug="
+
+PKG_URL="http://http.us.debian.org/debian/dists/sid/main/binary-amd64/Packages.gz"
 
 
 def get_cache_object( filename, url ):
     if not os.access(filename, os.R_OK):
         fname, hdrs = urllib.urlretrieve(url, filename)
     return( open(filename, 'r').read() )
+
+def get_pkg_dict():
+    PKG = 'tmp/Packages'
+    GZIPPKG = PKG + '.gz'
+
+    get_cache_object( GZIPPKG, PKG_URL )
+
+    pkglns = gzip.open(GZIPPKG, 'rb').read().split('\n')
+
+    pkgcmp = [ x.split(' ')[1] for x in pkglns if 'Package:' in x or 'Version' in x]
+
+    pkgver = {}
+    for pkg,ver in zip(pkgcmp[::2],pkgcmp[1::2]):
+        pkgver[pkg] = ver
+
+    return( pkgver )
 
 class RFSList(object):
     def __init__(self, rfs_url=RFS_URL):
@@ -46,11 +69,13 @@ class RFSList(object):
             yield(bug)
 
 class RFS(object):
-    def __init__(self, bugnum, bug_url=BUG_URL):
+    def __init__(self, bugnum, pkgdict, bug_url=BUG_URL):
         self.bugnum = bugnum
 
         text = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url+bugnum)
         self.raw = text.split('\n')
+
+        self.pkgdict = pkgdict
 
         self.soup = BeautifulSoup( text )
 
@@ -60,6 +85,18 @@ class RFS(object):
 
     def isDropped(self):
         srch = re.compile('Package .+ has been removed from mentors.')
+
+        removed_from_mentors = bool([x for x in self.raw if srch.search(x)])
+
+        if not removed_from_mentors:
+            return( False )
+
+        name, ver = self.pkgName()
+        if(name in self.pkgdict and ver and apt_pkg.version_compare(ver, self.pkgdict[name]) <= 0 ):
+            return( False )
+        else:
+            return( True )
+ 
         return(bool([x for x in self.raw if srch.search(x)]))
 
     def isAccepted(self):
@@ -126,8 +163,13 @@ class RFS(object):
     def pkgName(self):
         pkgLine = self.raw[2]
         pkgName = pkgLine.split()[3]
+        pkgVer = ''
 
-        return( pkgName )
+        if '/' in pkgName:
+            foo = pkgName
+            (pkgName, pkgVer) = foo.split('/')
+
+        return( pkgName, pkgVer )
 
     def comments(self):
 
@@ -172,11 +214,12 @@ csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, state, com
 
 
 rfslist = []
+pkg_dict = get_pkg_dict()
 for rfsnum in RFSList():
 
     print "Processing ", rfsnum
 
-    rfs = RFS(rfsnum)
+    rfs = RFS(rfsnum, pkg_dict)
 
 
     #age = max( time.time() - rfs.dateOpened()[1], 86400 )
@@ -184,7 +227,7 @@ for rfsnum in RFSList():
 
     entry = {
               'number':     rfsnum,
-              'name':       rfs.pkgName(),
+              'name':       '/'.join(rfs.pkgName()),
               'openStr':    rfs.dateOpened()[0],
               'openUnix':   rfs.dateOpened()[1],
               'closedStr':  rfs.dateClosed()[0],
@@ -202,7 +245,7 @@ for rfsnum in RFSList():
     csvline = "\"" + \
             "\", \"".join( [
               rfsnum,
-              rfs.pkgName(),
+              '/'.join(rfs.pkgName()),
               rfs.dateOpened()[0],
               str(rfs.dateOpened()[1]),
               rfs.dateClosed()[0],
