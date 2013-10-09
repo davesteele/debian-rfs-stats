@@ -44,11 +44,17 @@ def get_pkg_dict():
 
     pkglns = gzip.open(GZIPPKG, 'rb').read().split('\n')
 
-    pkgcmp = [ x.split(' ')[1] for x in pkglns if 'Package:' in x or 'Version' in x]
-
     pkgver = {}
-    for pkg,ver in zip(pkgcmp[::2],pkgcmp[1::2]):
-        pkgver[pkg] = ver
+
+    for line in pkglns:
+        if ": " in line:
+            (hdr, val) = line.split(' ', 1)
+
+            if hdr in ["Package:", "Source:"]:
+                name = val
+
+            if hdr in ["Version:"]:
+                pkgver[name] = val
 
     return( pkgver )
 
