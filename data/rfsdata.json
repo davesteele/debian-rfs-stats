@@ -2315,17 +2315,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 7, 
-      "lastUnix": 1378433895.0, 
-      "lastcomment": "Thu, 5 Sep 2013 22:18:15 +0200", 
+      "closedStr": "Sat, 23 Nov 2013 04:27:20 +0000", 
+      "closedUnix": 1385198840.0, 
+      "comments": 8, 
+      "lastUnix": 1385198840.0, 
+      "lastcomment": "Sat, 23 Nov 2013 04:27:20 +0000", 
       "name": "gemrb/0.8.0-1", 
       "number": "668505", 
       "openStr": "Thu, 12 Apr 2012 10:12:02 UTC", 
       "openUnix": 1334239922.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Wed, 09 May 2012 23:40:28 +0200", 
@@ -2650,7 +2650,7 @@
       "openStr": "Tue, 24 Apr 2012 03:51:01 UTC", 
       "openUnix": 1335253861.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Wed, 12 Sep 2012 16:36:03 +0000", 
@@ -3170,7 +3170,7 @@
       "openStr": "Sat, 12 May 2012 23:09:02 UTC", 
       "openUnix": 1336878542.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Fri, 29 Jun 2012 17:04:50 -0400", 
@@ -7044,7 +7044,7 @@
       "openStr": "Sat, 17 Nov 2012 02:12:02 UTC", 
       "openUnix": 1353136322.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Mon, 05 Aug 2013 04:23:20 +0000", 
@@ -8024,14 +8024,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 5, 
-      "lastUnix": 1359004634.0, 
-      "lastcomment": "Thu, 24 Jan 2013 00:17:14 +0100", 
+      "comments": 8, 
+      "lastUnix": 1384809788.0, 
+      "lastcomment": "Mon, 18 Nov 2013 16:23:08 -0500", 
       "name": "noblenote/1.0.8-1", 
       "number": "698557", 
       "openStr": "Sun, 20 Jan 2013 13:27:01 UTC", 
       "openUnix": 1358706421.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -8841,17 +8841,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 7, 
-      "lastUnix": 1372266097.0, 
-      "lastcomment": "Wed, 26 Jun 2013 13:01:37 +0200", 
+      "closedStr": "Thu, 14 Nov 2013 16:28:00 +0000", 
+      "closedUnix": 1384464480.0, 
+      "comments": 8, 
+      "lastUnix": 1384464480.0, 
+      "lastcomment": "Thu, 14 Nov 2013 16:28:00 +0000", 
       "name": "igtf-policy-bundle/1.54-1", 
       "number": "702329", 
       "openStr": "Tue,  5 Mar 2013 10:18:02 UTC", 
       "openUnix": 1362496682.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "Sun, 10 Mar 2013 05:12:30 +0000", 
@@ -9296,17 +9296,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1371228382.0, 
-      "lastcomment": "Fri, 14 Jun 2013 12:46:22 +0100", 
+      "closedStr": "Fri, 01 Nov 2013 16:26:58 +0000", 
+      "closedUnix": 1383337618.0, 
+      "comments": 4, 
+      "lastUnix": 1383337618.0, 
+      "lastcomment": "Fri, 01 Nov 2013 16:26:58 +0000", 
       "name": "sysadmin-guide/0.9-2", 
       "number": "704425", 
       "openStr": "Mon,  1 Apr 2013 00:00:01 UTC", 
       "openUnix": 1364788801.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "Wed, 3 Apr 2013 01:39:45 +0200", 
@@ -9673,17 +9673,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 11, 
-      "lastUnix": 1379697984.0, 
-      "lastcomment": "Fri, 20 Sep 2013 13:26:24 -0400", 
+      "closedStr": "Sun, 17 Nov 2013 16:27:46 +0000", 
+      "closedUnix": 1384723666.0, 
+      "comments": 12, 
+      "lastUnix": 1384723666.0, 
+      "lastcomment": "Sun, 17 Nov 2013 16:27:46 +0000", 
       "name": "chinese-checkers/0.4-1", 
       "number": "706904", 
       "openStr": "Sun,  5 May 2013 22:54:01 UTC", 
       "openUnix": 1367808841.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Tue, 24 Sep 2013 16:23:42 +0000", 
@@ -10026,14 +10026,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1379534908.0, 
-      "lastcomment": "Wed, 18 Sep 2013 16:08:28 +0200", 
+      "comments": 3, 
+      "lastUnix": 1384570865.0, 
+      "lastcomment": "Fri, 15 Nov 2013 22:01:05 -0500", 
       "name": "libtaginfo/0.1.6-1", 
       "number": "707594", 
       "openStr": "Thu,  9 May 2013 16:24:01 UTC", 
       "openUnix": 1368131041.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -10130,14 +10130,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1368549863.0, 
-      "lastcomment": "Tue, 14 May 2013 12:44:23 +0100", 
+      "comments": 2, 
+      "lastUnix": 1384630857.0, 
+      "lastcomment": "Sat, 16 Nov 2013 14:40:57 -0500", 
       "name": "regexxer/0.10-1", 
       "number": "708237", 
       "openStr": "Tue, 14 May 2013 11:45:08 UTC", 
       "openUnix": 1368546308.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -10177,7 +10177,7 @@
       "openStr": "Tue, 14 May 2013 22:33:01 UTC", 
       "openUnix": 1368585181.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Fri, 24 May 2013 20:09:03 +0200", 
@@ -10219,17 +10219,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1368732195.0, 
-      "lastcomment": "Thu, 16 May 2013 15:23:15 +1000", 
+      "closedStr": "Fri, 29 Nov 2013 16:28:05 +0000", 
+      "closedUnix": 1385760485.0, 
+      "comments": 2, 
+      "lastUnix": 1385760485.0, 
+      "lastcomment": "Fri, 29 Nov 2013 16:28:05 +0000", 
       "name": "powder/117+dfsg-2", 
       "number": "708503", 
       "openStr": "Thu, 16 May 2013 05:24:13 UTC", 
       "openUnix": 1368696253.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "Fri, 7 Jun 2013 16:33:53 +0900", 
@@ -10364,14 +10364,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 10, 
-      "lastUnix": 1379936022.0, 
-      "lastcomment": "Mon, 23 Sep 2013 07:33:42 +0200", 
+      "comments": 11, 
+      "lastUnix": 1383367660.0, 
+      "lastcomment": "Sat, 02 Nov 2013 00:47:40 +0100", 
       "name": "bats/0.2.0-1", 
       "number": "710473", 
       "openStr": "Fri, 31 May 2013 06:06:01 UTC", 
       "openUnix": 1369994761.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -10479,17 +10479,17 @@
       "state": "dropped"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1372624118.0, 
-      "lastcomment": "Sun, 30 Jun 2013 16:28:38 +0400", 
+      "closedStr": "Mon, 18 Nov 2013 16:27:01 +0000", 
+      "closedUnix": 1384810021.0, 
+      "comments": 4, 
+      "lastUnix": 1384810021.0, 
+      "lastcomment": "Mon, 18 Nov 2013 16:27:01 +0000", 
       "name": "scandir/0.1+git20130521-1", 
       "number": "711402", 
       "openStr": "Thu,  6 Jun 2013 19:00:02 UTC", 
       "openUnix": 1370559602.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Wed, 12 Jun 2013 04:28:53 +0200", 
@@ -10557,43 +10557,43 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1372134285.0, 
-      "lastcomment": "Tue, 25 Jun 2013 00:24:45 +0400", 
+      "closedStr": "Mon, 04 Nov 2013 16:26:56 +0000", 
+      "closedUnix": 1383600416.0, 
+      "comments": 3, 
+      "lastUnix": 1383600416.0, 
+      "lastcomment": "Mon, 04 Nov 2013 16:26:56 +0000", 
       "name": "libgpg-error/1.11-0.1", 
       "number": "712491", 
       "openStr": "Sun, 16 Jun 2013 12:57:02 UTC", 
       "openUnix": 1371401822.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1371418386.0, 
-      "lastcomment": "Sun, 16 Jun 2013 17:33:06 +0400", 
+      "closedStr": "Mon, 04 Nov 2013 16:26:55 +0000", 
+      "closedUnix": 1383600415.0, 
+      "comments": 2, 
+      "lastUnix": 1383600415.0, 
+      "lastcomment": "Mon, 04 Nov 2013 16:26:55 +0000", 
       "name": "auto-07p/0.9.1+dfsg-1", 
       "number": "712494", 
       "openStr": "Sun, 16 Jun 2013 13:36:02 UTC", 
       "openUnix": 1371404162.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1371420185.0, 
-      "lastcomment": "Sun, 16 Jun 2013 18:03:05 +0300", 
+      "closedStr": "Mon, 04 Nov 2013 16:26:55 +0000", 
+      "closedUnix": 1383600415.0, 
+      "comments": 2, 
+      "lastUnix": 1383600415.0, 
+      "lastcomment": "Mon, 04 Nov 2013 16:26:55 +0000", 
       "name": "gnome-shell-extension-icon-hider/10-1", 
       "number": "712505", 
       "openStr": "Sun, 16 Jun 2013 15:06:01 UTC", 
       "openUnix": 1371409561.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "Tue, 18 Jun 2013 06:00:18 -0400", 
@@ -10614,7 +10614,7 @@
       "comments": 5, 
       "lastUnix": 1372215307.0, 
       "lastcomment": "Tue, 25 Jun 2013 22:55:07 +0300", 
-      "name": "meson/0.9.0-1", 
+      "name": "meson/0.10.0-1", 
       "number": "712610", 
       "openStr": "Mon, 17 Jun 2013 21:18:01 UTC", 
       "openUnix": 1371518281.0, 
@@ -10637,14 +10637,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1375797367.0, 
-      "lastcomment": "Tue, 6 Aug 2013 09:56:07 +0200 (CEST)", 
+      "comments": 5, 
+      "lastUnix": 1384653544.0, 
+      "lastcomment": "Sat, 16 Nov 2013 20:59:04 -0200", 
       "name": "distkeys/1.0", 
       "number": "712787", 
       "openStr": "Wed, 19 Jun 2013 14:03:01 UTC", 
       "openUnix": 1371664981.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -10663,9 +10663,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1371741026.0, 
-      "lastcomment": "Thu, 20 Jun 2013 11:10:26 +0200", 
+      "comments": 3, 
+      "lastUnix": 1384653129.0, 
+      "lastcomment": "Sat, 16 Nov 2013 20:52:09 -0200", 
       "name": "ctesf-console/1.0-1", 
       "number": "712805", 
       "openStr": "Wed, 19 Jun 2013 16:48:02 UTC", 
@@ -10674,17 +10674,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1371741102.0, 
-      "lastcomment": "Thu, 20 Jun 2013 11:11:42 +0200", 
+      "closedStr": "Tue, 05 Nov 2013 16:26:39 +0000", 
+      "closedUnix": 1383686799.0, 
+      "comments": 3, 
+      "lastUnix": 1383686799.0, 
+      "lastcomment": "Tue, 05 Nov 2013 16:26:39 +0000", 
       "name": "orientdb/1.3.0-1", 
       "number": "712806", 
       "openStr": "Wed, 19 Jun 2013 16:48:13 UTC", 
       "openUnix": 1371674893.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Thu, 20 Jun 2013 22:56:16 +0200", 
@@ -10741,14 +10741,14 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 6, 
-      "lastUnix": 1374549860.0, 
-      "lastcomment": "Mon, 22 Jul 2013 23:24:20 +0200", 
+      "comments": 9, 
+      "lastUnix": 1385850159.0, 
+      "lastcomment": "Sat, 30 Nov 2013 17:22:39 +0100", 
       "name": "peg/0.1.13-1", 
       "number": "712982", 
       "openStr": "Fri, 21 Jun 2013 13:06:02 UTC", 
       "openUnix": 1371834362.0, 
-      "readyForReview": true, 
+      "readyForReview": false, 
       "state": "open"
     }, 
     {
@@ -10765,30 +10765,30 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1372122450.0, 
-      "lastcomment": "Mon, 24 Jun 2013 21:07:30 +0200", 
+      "closedStr": "Sun, 10 Nov 2013 16:27:23 +0000", 
+      "closedUnix": 1384118843.0, 
+      "comments": 3, 
+      "lastUnix": 1384118843.0, 
+      "lastcomment": "Sun, 10 Nov 2013 16:27:23 +0000", 
       "name": "simplenat/0.1", 
       "number": "713810", 
       "openStr": "Sat, 22 Jun 2013 18:57:02 UTC", 
       "openUnix": 1371941822.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1371957505.0, 
-      "lastcomment": "Sat, 22 Jun 2013 23:18:25 +0200", 
+      "closedStr": "Sun, 10 Nov 2013 16:27:24 +0000", 
+      "closedUnix": 1384118844.0, 
+      "comments": 2, 
+      "lastUnix": 1384118844.0, 
+      "lastcomment": "Sun, 10 Nov 2013 16:27:24 +0000", 
       "name": "hakuneko/1.0.5", 
       "number": "713821", 
       "openStr": "Sat, 22 Jun 2013 21:21:01 UTC", 
       "openUnix": 1371950461.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "", 
@@ -10830,25 +10830,25 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1373247115.0, 
-      "lastcomment": "Sun, 7 Jul 2013 21:31:55 -0400", 
+      "closedStr": "Mon, 25 Nov 2013 16:27:01 +0000", 
+      "closedUnix": 1385414821.0, 
+      "comments": 3, 
+      "lastUnix": 1385414821.0, 
+      "lastcomment": "Mon, 25 Nov 2013 16:27:01 +0000", 
       "name": "s3cmd/1.5.0~alpha3-1", 
       "number": "714292", 
       "openStr": "Thu, 27 Jun 2013 15:33:01 UTC", 
       "openUnix": 1372361581.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1372545382.0, 
-      "lastcomment": "Sat, 29 Jun 2013 18:36:22 +0200", 
-      "name": "polyphone/1.0-1", 
+      "comments": 5, 
+      "lastUnix": 1384034428.0, 
+      "lastcomment": "Sat, 09 Nov 2013 17:00:28 +0100", 
+      "name": "polyphone/1.1-1", 
       "number": "714310", 
       "openStr": "Thu, 27 Jun 2013 19:57:02 UTC", 
       "openUnix": 1372377422.0, 
@@ -10895,17 +10895,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1372633540.0, 
-      "lastcomment": "Sun, 30 Jun 2013 19:05:40 +0200", 
+      "closedStr": "Mon, 18 Nov 2013 16:27:03 +0000", 
+      "closedUnix": 1384810023.0, 
+      "comments": 2, 
+      "lastUnix": 1384810023.0, 
+      "lastcomment": "Mon, 18 Nov 2013 16:27:03 +0000", 
       "name": "twig/1.13.1+dfsg-1", 
       "number": "714548", 
       "openStr": "Sun, 30 Jun 2013 17:09:02 UTC", 
       "openUnix": 1372626542.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "", 
@@ -10926,7 +10926,7 @@
       "comments": 15, 
       "lastUnix": 1379166423.0, 
       "lastcomment": "Sat, 14 Sep 2013 09:47:03 +0900", 
-      "name": "marisa/0.2.4-2", 
+      "name": "marisa/0.2.4-3", 
       "number": "714734", 
       "openStr": "Tue,  2 Jul 2013 10:15:02 UTC", 
       "openUnix": 1372774502.0, 
@@ -10947,17 +10947,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1372821362.0, 
-      "lastcomment": "Tue, 02 Jul 2013 23:16:02 +0200", 
+      "closedStr": "Tue, 19 Nov 2013 16:27:01 +0000", 
+      "closedUnix": 1384896421.0, 
+      "comments": 3, 
+      "lastUnix": 1384896421.0, 
+      "lastcomment": "Tue, 19 Nov 2013 16:27:01 +0000", 
       "name": "exposong/0.8-1", 
       "number": "714790", 
       "openStr": "Tue,  2 Jul 2013 20:39:02 UTC", 
       "openUnix": 1372811942.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Sat, 6 Jul 2013 02:47:15 +1000", 
@@ -10986,17 +10986,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1373117524.0, 
-      "lastcomment": "Sat, 06 Jul 2013 09:32:04 +0200", 
+      "closedStr": "Sun, 24 Nov 2013 16:27:56 +0000", 
+      "closedUnix": 1385328476.0, 
+      "comments": 3, 
+      "lastUnix": 1385328476.0, 
+      "lastcomment": "Sun, 24 Nov 2013 16:27:56 +0000", 
       "name": "ocrodjvu/0.7.16-1", 
       "number": "715142", 
       "openStr": "Sat,  6 Jul 2013 07:36:06 UTC", 
       "openUnix": 1373110566.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "dropped"
     }, 
     {
       "closedStr": "Sat, 31 Aug 2013 16:23:43 +0000", 
@@ -11051,17 +11051,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1379689770.0, 
-      "lastcomment": "Fri, 20 Sep 2013 11:09:30 +0200", 
+      "closedStr": "Sun, 24 Nov 2013 16:27:56 +0000", 
+      "closedUnix": 1385328476.0, 
+      "comments": 3, 
+      "lastUnix": 1385328476.0, 
+      "lastcomment": "Sun, 24 Nov 2013 16:27:56 +0000", 
       "name": "osrm/0.3.4-1", 
       "number": "715543", 
       "openStr": "Wed, 10 Jul 2013 09:36:02 UTC", 
       "openUnix": 1373463362.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "dropped"
     }, 
     {
       "closedStr": "Thu, 11 Jul 2013 16:24:06 +0000", 
@@ -11246,17 +11246,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1381696269.0, 
-      "lastcomment": "Sun, 13 Oct 2013 16:31:09 +0200", 
+      "closedStr": "Sun, 10 Nov 2013 16:27:23 +0000", 
+      "closedUnix": 1384118843.0, 
+      "comments": 4, 
+      "lastUnix": 1384118843.0, 
+      "lastcomment": "Sun, 10 Nov 2013 16:27:23 +0000", 
       "name": "engauge-digitizer/5.2-1", 
       "number": "717577", 
       "openStr": "Mon, 22 Jul 2013 16:51:02 UTC", 
       "openUnix": 1374526262.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Thu, 25 Jul 2013 21:01:24 +0200", 
@@ -11391,9 +11391,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 14, 
-      "lastUnix": 1381675668.0, 
-      "lastcomment": "Sun, 13 Oct 2013 10:47:48 +0200", 
+      "comments": 19, 
+      "lastUnix": 1385611429.0, 
+      "lastcomment": "Wed, 27 Nov 2013 23:03:49 +0200", 
       "name": "hyperrogue/3.8+dfsg-1", 
       "number": "718323", 
       "openStr": "Tue, 30 Jul 2013 08:27:02 UTC", 
@@ -11402,17 +11402,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1375402712.0, 
-      "lastcomment": "Thu, 1 Aug 2013 20:18:32 +1000", 
+      "closedStr": "Sun, 17 Nov 2013 07:10:11 +1100", 
+      "closedUnix": 1384690211.0, 
+      "comments": 4, 
+      "lastUnix": 1384690211.0, 
+      "lastcomment": "Sun, 17 Nov 2013 07:10:11 +1100", 
       "name": "python-meld3/0.6.10-1", 
       "number": "718486", 
       "openStr": "Thu,  1 Aug 2013 10:21:01 UTC", 
       "openUnix": 1375366861.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Mon, 12 Aug 2013 16:23:52 +0000", 
@@ -11935,17 +11935,17 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 12, 
-      "lastUnix": 1381248962.0, 
-      "lastcomment": "Tue, 08 Oct 2013 12:16:02 +0100", 
+      "closedStr": "Wed, 06 Nov 2013 16:27:45 +0000", 
+      "closedUnix": 1383773265.0, 
+      "comments": 13, 
+      "lastUnix": 1383773265.0, 
+      "lastcomment": "Wed, 06 Nov 2013 16:27:45 +0000", 
       "name": "vpcs/0.5b0-1", 
       "number": "721080", 
       "openStr": "Tue, 27 Aug 2013 18:18:02 UTC", 
       "openUnix": 1377641882.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "", 
@@ -11997,20 +11997,20 @@
       "openStr": "Fri, 30 Aug 2013 19:21:02 UTC", 
       "openUnix": 1377904862.0, 
       "readyForReview": false, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1377974191.0, 
-      "lastcomment": "Sat, 31 Aug 2013 14:36:31 +0300", 
+      "closedStr": "Thu, 28 Nov 2013 08:42:55 +0800", 
+      "closedUnix": 1385646175.0, 
+      "comments": 5, 
+      "lastUnix": 1385646175.0, 
+      "lastcomment": "Thu, 28 Nov 2013 08:42:55 +0800", 
       "name": "pentobi/7.1-1", 
       "number": "721424", 
       "openStr": "Sat, 31 Aug 2013 11:39:02 UTC", 
       "openUnix": 1377963542.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Thu, 12 Sep 2013 16:23:37 +0000", 
@@ -12143,30 +12143,30 @@
       "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 14, 
-      "lastUnix": 1380721242.0, 
-      "lastcomment": "Wed, 2 Oct 2013 09:40:42 +0200 (CEST)", 
+      "closedStr": "Sat, 30 Nov 2013 04:31:44 +0000", 
+      "closedUnix": 1385803904.0, 
+      "comments": 15, 
+      "lastUnix": 1385803904.0, 
+      "lastcomment": "Sat, 30 Nov 2013 04:31:44 +0000", 
       "name": "osmctools/0.1-1", 
       "number": "722450", 
       "openStr": "Wed, 11 Sep 2013 07:54:01 UTC", 
       "openUnix": 1378900441.0, 
       "readyForReview": false, 
-      "state": "open"
+      "state": "accepted"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1378938383.0, 
-      "lastcomment": "Wed, 11 Sep 2013 18:26:23 +0800", 
+      "closedStr": "Sun, 01 Dec 2013 04:29:54 +0000", 
+      "closedUnix": 1385890194.0, 
+      "comments": 2, 
+      "lastUnix": 1385890194.0, 
+      "lastcomment": "Sun, 01 Dec 2013 04:29:54 +0000", 
       "name": "acsccid/1.0.5-1", 
       "number": "722459", 
       "openStr": "Wed, 11 Sep 2013 10:27:01 UTC", 
       "openUnix": 1378909621.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "", 
@@ -12340,10 +12340,10 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1380999271.0, 
-      "lastcomment": "Sat, 05 Oct 2013 14:54:31 +0200", 
-      "name": "phabricator/0~git20131018-1", 
+      "comments": 5, 
+      "lastUnix": 1383879907.0, 
+      "lastcomment": "Thu, 07 Nov 2013 22:05:07 +0100", 
+      "name": "phabricator/0~git20131114-1", 
       "number": "723804", 
       "openStr": "Thu, 19 Sep 2013 23:03:02 UTC", 
       "openUnix": 1379646182.0, 
@@ -12603,7 +12603,7 @@
       "comments": 1, 
       "lastUnix": 1380506400.0, 
       "lastcomment": "Sun, 29 Sep 2013 22:00:00 +0300", 
-      "name": "sflowtool/3.29-1", 
+      "name": "sflowtool/3.30-1", 
       "number": "724939", 
       "openStr": "Sun, 29 Sep 2013 19:03:02 UTC", 
       "openUnix": 1380495782.0, 
@@ -12647,7 +12647,7 @@
       "openStr": "Thu,  3 Oct 2013 03:39:02 UTC", 
       "openUnix": 1380785942.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Fri, 4 Oct 2013 22:07:43 +0200", 
@@ -12691,10 +12691,10 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1381376632.0, 
-      "lastcomment": "Wed, 9 Oct 2013 23:43:52 +0400", 
-      "name": "task-spooler/0.7.3-2", 
+      "comments": 4, 
+      "lastUnix": 1385063411.0, 
+      "lastcomment": "Thu, 21 Nov 2013 14:50:11 +0400", 
+      "name": "task-spooler/0.7.4-1", 
       "number": "725447", 
       "openStr": "Sat,  5 Oct 2013 23:33:01 UTC", 
       "openUnix": 1381030381.0, 
@@ -12858,17 +12858,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1381727804.0, 
-      "lastcomment": "Mon, 14 Oct 2013 01:16:44 +0200", 
+      "closedStr": "Sun, 03 Nov 2013 16:28:19 +0000", 
+      "closedUnix": 1383514099.0, 
+      "comments": 2, 
+      "lastUnix": 1383514099.0, 
+      "lastcomment": "Sun, 03 Nov 2013 16:28:19 +0000", 
       "name": "lbzip2/2.3-1", 
       "number": "726261", 
       "openStr": "Sun, 13 Oct 2013 23:21:02 UTC", 
       "openUnix": 1381720862.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Tue, 15 Oct 2013 16:23:57 +0000", 
@@ -12925,9 +12925,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1381950530.0, 
-      "lastcomment": "Wed, 16 Oct 2013 15:08:50 +0100", 
+      "comments": 3, 
+      "lastUnix": 1385585782.0, 
+      "lastcomment": "Wed, 27 Nov 2013 15:56:22 +0000", 
       "name": "0install/2.3.3-2", 
       "number": "726533", 
       "openStr": "Wed, 16 Oct 2013 14:12:02 UTC", 
@@ -12936,17 +12936,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1382009922.0, 
-      "lastcomment": "Thu, 17 Oct 2013 07:38:42 -0500", 
+      "closedStr": "Thu, 14 Nov 2013 16:28:03 +0000", 
+      "closedUnix": 1384464483.0, 
+      "comments": 2, 
+      "lastUnix": 1384464483.0, 
+      "lastcomment": "Thu, 14 Nov 2013 16:28:03 +0000", 
       "name": "tintii/2.8.0-1", 
       "number": "726632", 
       "openStr": "Thu, 17 Oct 2013 12:42:01 UTC", 
       "openUnix": 1382028121.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Sat, 26 Oct 2013 04:24:41 +0000", 
@@ -12959,7 +12959,7 @@
       "openStr": "Thu, 17 Oct 2013 16:51:02 UTC", 
       "openUnix": 1382043062.0, 
       "readyForReview": false, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedStr": "Fri, 18 Oct 2013 21:37:11 +0300", 
@@ -13053,17 +13053,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1382371012.0, 
-      "lastcomment": "Mon, 21 Oct 2013 11:56:52 +0200", 
+      "closedStr": "Sat, 02 Nov 2013 16:28:30 +0000", 
+      "closedUnix": 1383424110.0, 
+      "comments": 2, 
+      "lastUnix": 1383424110.0, 
+      "lastcomment": "Sat, 02 Nov 2013 16:28:30 +0000", 
       "name": "etherwake/1.09-4", 
       "number": "726992", 
       "openStr": "Mon, 21 Oct 2013 10:00:02 UTC", 
       "openUnix": 1382364002.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "", 
@@ -13209,17 +13209,17 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1383005939.0, 
-      "lastcomment": "Mon, 28 Oct 2013 20:18:59 -0500", 
-      "name": "jshon/20131010-1", 
+      "closedStr": "Sat, 30 Nov 2013 04:31:42 +0000", 
+      "closedUnix": 1385803902.0, 
+      "comments": 2, 
+      "lastUnix": 1385803902.0, 
+      "lastcomment": "Sat, 30 Nov 2013 04:31:42 +0000", 
+      "name": "jshon/20131010-3", 
       "number": "728166", 
       "openStr": "Tue, 29 Oct 2013 01:21:08 UTC", 
       "openUnix": 1383024068.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "Tue, 29 Oct 2013 16:26:17 +0000", 
@@ -13237,9 +13237,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 5, 
-      "lastUnix": 1383150731.0, 
-      "lastcomment": "Wed, 30 Oct 2013 12:32:11 +0100", 
+      "comments": 6, 
+      "lastUnix": 1383351111.0, 
+      "lastcomment": "Fri, 1 Nov 2013 20:11:51 +0100", 
       "name": "fatcat/", 
       "number": "728220", 
       "openStr": "Tue, 29 Oct 2013 16:42:01 UTC", 
@@ -13250,9 +13250,9 @@
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1383126942.0, 
-      "lastcomment": "Wed, 30 Oct 2013 05:55:42 -0400", 
+      "comments": 6, 
+      "lastUnix": 1385068535.0, 
+      "lastcomment": "Thu, 21 Nov 2013 16:15:35 -0500", 
       "name": "sane-backends/1.0.24-1", 
       "number": "728292", 
       "openStr": "Wed, 30 Oct 2013 10:00:02 UTC", 
@@ -13261,25 +13261,25 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1383153061.0, 
-      "lastcomment": "Wed, 30 Oct 2013 13:11:01 +0100", 
+      "closedStr": "Sat, 02 Nov 2013 16:28:35 +0000", 
+      "closedUnix": 1383424115.0, 
+      "comments": 2, 
+      "lastUnix": 1383424115.0, 
+      "lastcomment": "Sat, 02 Nov 2013 16:28:35 +0000", 
       "name": "dh-make/0.62+nmu1", 
       "number": "728300", 
       "openStr": "Wed, 30 Oct 2013 12:15:01 UTC", 
       "openUnix": 1383149701.0, 
-      "readyForReview": true, 
-      "state": "open"
+      "readyForReview": false, 
+      "state": "accepted"
     }, 
     {
       "closedStr": "", 
       "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1383241659.0, 
-      "lastcomment": "Thu, 31 Oct 2013 13:47:39 +0200", 
-      "name": "open-axiom/1.5.0~svn3056-1", 
+      "comments": 8, 
+      "lastUnix": 1385271287.0, 
+      "lastcomment": "Sun, 24 Nov 2013 00:34:47 +0200", 
+      "name": "open-axiom/1.5.0~svn3056+ds-1", 
       "number": "728360", 
       "openStr": "Thu, 31 Oct 2013 08:27:02 UTC", 
       "openUnix": 1383222422.0, 
@@ -13287,15 +13287,106 @@
       "state": "open"
     }, 
     {
-      "closedStr": "", 
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1383237791.0, 
-      "lastcomment": "Thu, 31 Oct 2013 12:43:11 +0100", 
+      "closedStr": "Thu, 28 Nov 2013 09:03:14 +0100", 
+      "closedUnix": 1385647394.0, 
+      "comments": 2, 
+      "lastUnix": 1385647394.0, 
+      "lastcomment": "Thu, 28 Nov 2013 09:03:14 +0100", 
       "name": "fox1.6/", 
       "number": "728376", 
       "openStr": "Thu, 31 Oct 2013 12:06:02 UTC", 
       "openUnix": 1383235562.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Mon, 04 Nov 2013 16:26:55 +0000", 
+      "closedUnix": 1383600415.0, 
+      "comments": 2, 
+      "lastUnix": 1383600415.0, 
+      "lastcomment": "Mon, 04 Nov 2013 16:26:55 +0000", 
+      "name": "stressapptest/1.0.4-3", 
+      "number": "728383", 
+      "openStr": "Thu, 31 Oct 2013 14:39:02 UTC", 
+      "openUnix": 1383244742.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sat, 2 Nov 2013 23:09:53 +0100", 
+      "closedUnix": 1383448193.0, 
+      "comments": 2, 
+      "lastUnix": 1383448193.0, 
+      "lastcomment": "Sat, 2 Nov 2013 23:09:53 +0100", 
+      "name": "chessx/1.0.0-1", 
+      "number": "728503", 
+      "openStr": "Fri,  1 Nov 2013 23:39:02 UTC", 
+      "openUnix": 1383363542.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1383364793.0, 
+      "lastcomment": "Fri, 1 Nov 2013 23:59:53 -0500", 
+      "name": "secpanel/1:0.6.1-2", 
+      "number": "728510", 
+      "openStr": "Sat,  2 Nov 2013 05:03:02 UTC", 
+      "openUnix": 1383382982.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Mon, 04 Nov 2013 04:24:24 +0000", 
+      "closedUnix": 1383557064.0, 
+      "comments": 3, 
+      "lastUnix": 1383557064.0, 
+      "lastcomment": "Mon, 04 Nov 2013 04:24:24 +0000", 
+      "name": "compton/0.1~beta2-1", 
+      "number": "728587", 
+      "openStr": "Sun,  3 Nov 2013 12:15:02 UTC", 
+      "openUnix": 1383498902.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1383604147.0, 
+      "lastcomment": "Mon, 04 Nov 2013 17:29:07 +0100", 
+      "name": "xlsxwriter/0.4.6-1", 
+      "number": "728715", 
+      "openStr": "Mon,  4 Nov 2013 16:30:17 UTC", 
+      "openUnix": 1383600617.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 29, 
+      "lastUnix": 1384276810.0, 
+      "lastcomment": "Tue, 12 Nov 2013 12:20:10 +0000", 
+      "name": "xchroot/2.3.3-5", 
+      "number": "728716", 
+      "openStr": "Mon,  4 Nov 2013 16:33:01 UTC", 
+      "openUnix": 1383600781.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 3, 
+      "lastUnix": 1385752028.0, 
+      "lastcomment": "Fri, 29 Nov 2013 14:07:08 +0100", 
+      "name": "-/", 
+      "number": "728758", 
+      "openStr": "Tue,  5 Nov 2013 08:30:02 UTC", 
+      "openUnix": 1383658202.0, 
       "readyForReview": true, 
       "state": "open"
     }, 
@@ -13303,16 +13394,458 @@
       "closedStr": "", 
       "closedUnix": 0, 
       "comments": 1, 
-      "lastUnix": 1383248044.0, 
-      "lastcomment": "Thu, 31 Oct 2013 15:34:04 +0100", 
-      "name": "stressapptest/1.0.4-3", 
-      "number": "728383", 
-      "openStr": "Thu, 31 Oct 2013 14:39:02 UTC", 
-      "openUnix": 1383244742.0, 
+      "lastUnix": 1383782726.0, 
+      "lastcomment": "Wed, 06 Nov 2013 19:05:26 +0400", 
+      "name": "stx-btree/0.9-1", 
+      "number": "728889", 
+      "openStr": "Wed,  6 Nov 2013 15:09:02 UTC", 
+      "openUnix": 1383768542.0, 
       "readyForReview": true, 
       "state": "open"
+    }, 
+    {
+      "closedStr": "Sun, 24 Nov 2013 16:27:56 +0000", 
+      "closedUnix": 1385328476.0, 
+      "comments": 4, 
+      "lastUnix": 1385328476.0, 
+      "lastcomment": "Sun, 24 Nov 2013 16:27:56 +0000", 
+      "name": "libclass-std-storable-perl/0.0.1-1", 
+      "number": "728973", 
+      "openStr": "Thu,  7 Nov 2013 11:51:13 UTC", 
+      "openUnix": 1383843073.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1383841476.0, 
+      "lastcomment": "Thu, 07 Nov 2013 11:24:36 -0800", 
+      "name": "xfce4-equake-plugin/1.3.3-1", 
+      "number": "729002", 
+      "openStr": "Thu,  7 Nov 2013 19:27:02 UTC", 
+      "openUnix": 1383870422.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Mon, 18 Nov 2013 23:47:00 +0100", 
+      "closedUnix": 1384836420.0, 
+      "comments": 4, 
+      "lastUnix": 1384836420.0, 
+      "lastcomment": "Mon, 18 Nov 2013 23:47:00 +0100", 
+      "name": "automx/0.10.0-1", 
+      "number": "729043", 
+      "openStr": "Fri,  8 Nov 2013 09:42:02 UTC", 
+      "openUnix": 1383921722.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1384012454.0, 
+      "lastcomment": "Sat, 9 Nov 2013 10:54:14 +0200", 
+      "name": "python-praw/2.1.11-1", 
+      "number": "729082", 
+      "openStr": "Fri,  8 Nov 2013 20:27:02 UTC", 
+      "openUnix": 1383960422.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1384012490.0, 
+      "lastcomment": "Sat, 9 Nov 2013 10:54:50 +0200", 
+      "name": "alienfeed/0~20131106+gitf33a8ecb54-1", 
+      "number": "729083", 
+      "openStr": "Fri,  8 Nov 2013 20:30:02 UTC", 
+      "openUnix": 1383960602.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 12, 
+      "lastUnix": 1384381562.0, 
+      "lastcomment": "Wed, 13 Nov 2013 17:26:02 +1100", 
+      "name": "gtkiostream/1.3.0", 
+      "number": "729091", 
+      "openStr": "Fri,  8 Nov 2013 22:21:01 UTC", 
+      "openUnix": 1383967261.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Sat, 23 Nov 2013 16:27:38 +0000", 
+      "closedUnix": 1385242058.0, 
+      "comments": 2, 
+      "lastUnix": 1385242058.0, 
+      "lastcomment": "Sat, 23 Nov 2013 16:27:38 +0000", 
+      "name": "libkml/1.3.0~r864-2", 
+      "number": "729196", 
+      "openStr": "Sun, 10 Nov 2013 03:03:01 UTC", 
+      "openUnix": 1384070581.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sun, 10 Nov 2013 22:53:21 +1100", 
+      "closedUnix": 1384142001.0, 
+      "comments": 4, 
+      "lastUnix": 1384142001.0, 
+      "lastcomment": "Sun, 10 Nov 2013 22:53:21 +1100", 
+      "name": "pasystray/0.4.0-1", 
+      "number": "729208", 
+      "openStr": "Sun, 10 Nov 2013 08:18:01 UTC", 
+      "openUnix": 1384089481.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sun, 17 Nov 2013 16:27:42 +0000", 
+      "closedUnix": 1384723662.0, 
+      "comments": 2, 
+      "lastUnix": 1384723662.0, 
+      "lastcomment": "Sun, 17 Nov 2013 16:27:42 +0000", 
+      "name": "netmate/0.2.0-1", 
+      "number": "729237", 
+      "openStr": "Sun, 10 Nov 2013 17:00:02 UTC", 
+      "openUnix": 1384120802.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1384219018.0, 
+      "lastcomment": "Mon, 11 Nov 2013 20:16:58 +0100", 
+      "name": "syfi/1.0.0.dfsg-1.2", 
+      "number": "729323", 
+      "openStr": "Mon, 11 Nov 2013 19:21:02 UTC", 
+      "openUnix": 1384215662.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 8, 
+      "lastUnix": 1385107084.0, 
+      "lastcomment": "Fri, 22 Nov 2013 02:58:04 +0100", 
+      "name": "auto-07p/0.9.1+dfsg-1", 
+      "number": "729354", 
+      "openStr": "Tue, 12 Nov 2013 09:15:02 UTC", 
+      "openUnix": 1384265702.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Sat, 30 Nov 2013 13:57:26 +0100", 
+      "closedUnix": 1385837846.0, 
+      "comments": 10, 
+      "lastUnix": 1385837846.0, 
+      "lastcomment": "Sat, 30 Nov 2013 13:57:26 +0100", 
+      "name": "mtink/1.0.16-8", 
+      "number": "729359", 
+      "openStr": "Tue, 12 Nov 2013 10:03:07 UTC", 
+      "openUnix": 1384268587.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Thu, 14 Nov 2013 04:27:17 +0000", 
+      "closedUnix": 1384421237.0, 
+      "comments": 4, 
+      "lastUnix": 1384421237.0, 
+      "lastcomment": "Thu, 14 Nov 2013 04:27:17 +0000", 
+      "name": "spiped/1.3.1-1", 
+      "number": "729374", 
+      "openStr": "Tue, 12 Nov 2013 14:27:02 UTC", 
+      "openUnix": 1384284422.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 6, 
+      "lastUnix": 1384698185.0, 
+      "lastcomment": "Sun, 17 Nov 2013 09:23:05 +0800", 
+      "name": "authprogs/0.5.1-1", 
+      "number": "729375", 
+      "openStr": "Tue, 12 Nov 2013 14:51:02 UTC", 
+      "openUnix": 1384285862.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1384374763.0, 
+      "lastcomment": "Wed, 13 Nov 2013 15:32:43 -0800", 
+      "name": "libpoly2tri/0.3.3-1", 
+      "number": "729534", 
+      "openStr": "Wed, 13 Nov 2013 23:36:01 UTC", 
+      "openUnix": 1384403761.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Fri, 15 Nov 2013 16:26:13 +0000", 
+      "closedUnix": 1384550773.0, 
+      "comments": 3, 
+      "lastUnix": 1384550773.0, 
+      "lastcomment": "Fri, 15 Nov 2013 16:26:13 +0000", 
+      "name": "spatialite/4.1.1-3", 
+      "number": "729586", 
+      "openStr": "Thu, 14 Nov 2013 16:09:01 UTC", 
+      "openUnix": 1384463341.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sat, 16 Nov 2013 11:14:51 -0200", 
+      "closedUnix": 1384618491.0, 
+      "comments": 12, 
+      "lastUnix": 1384618491.0, 
+      "lastcomment": "Sat, 16 Nov 2013 11:14:51 -0200", 
+      "name": "vokoscreen/1.8.1-1", 
+      "number": "729601", 
+      "openStr": "Thu, 14 Nov 2013 20:36:01 UTC", 
+      "openUnix": 1384479361.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sat, 16 Nov 2013 18:45:40 +0100", 
+      "closedUnix": 1384645540.0, 
+      "comments": 2, 
+      "lastUnix": 1384645540.0, 
+      "lastcomment": "Sat, 16 Nov 2013 18:45:40 +0100", 
+      "name": "nlopt/2.4+dfsg-1", 
+      "number": "729734", 
+      "openStr": "Sat, 16 Nov 2013 14:45:02 UTC", 
+      "openUnix": 1384631102.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1384834253.0, 
+      "lastcomment": "Mon, 18 Nov 2013 23:10:53 -0300", 
+      "name": "crossroads/2.81-1", 
+      "number": "729942", 
+      "openStr": "Tue, 19 Nov 2013 03:09:02 UTC", 
+      "openUnix": 1384848542.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1384935827.0, 
+      "lastcomment": "Wed, 20 Nov 2013 03:23:47 -0008", 
+      "name": "elementary-icon-theme/3.2-2", 
+      "number": "730009", 
+      "openStr": "Wed, 20 Nov 2013 03:33:02 UTC", 
+      "openUnix": 1384936382.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Thu, 21 Nov 2013 16:26:35 +0000", 
+      "closedUnix": 1385069195.0, 
+      "comments": 2, 
+      "lastUnix": 1385069195.0, 
+      "lastcomment": "Thu, 21 Nov 2013 16:26:35 +0000", 
+      "name": "librasterlite/1.1g-1", 
+      "number": "730081", 
+      "openStr": "Thu, 21 Nov 2013 03:57:07 UTC", 
+      "openUnix": 1385024227.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Fri, 22 Nov 2013 16:27:26 +0000", 
+      "closedUnix": 1385155646.0, 
+      "comments": 2, 
+      "lastUnix": 1385155646.0, 
+      "lastcomment": "Fri, 22 Nov 2013 16:27:26 +0000", 
+      "name": "freexl/1.0.0f-2", 
+      "number": "730154", 
+      "openStr": "Fri, 22 Nov 2013 00:09:02 UTC", 
+      "openUnix": 1385096942.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Fri, 22 Nov 2013 16:27:29 +0000", 
+      "closedUnix": 1385155649.0, 
+      "comments": 2, 
+      "lastUnix": 1385155649.0, 
+      "lastcomment": "Fri, 22 Nov 2013 16:27:29 +0000", 
+      "name": "spatialite/4.1.1-4", 
+      "number": "730155", 
+      "openStr": "Fri, 22 Nov 2013 00:18:02 UTC", 
+      "openUnix": 1385097482.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Sun, 24 Nov 2013 00:32:33 +0100", 
+      "closedUnix": 1385271153.0, 
+      "comments": 2, 
+      "lastUnix": 1385271153.0, 
+      "lastcomment": "Sun, 24 Nov 2013 00:32:33 +0100", 
+      "name": "transcriber/1.5.1.1-9", 
+      "number": "730156", 
+      "openStr": "Fri, 22 Nov 2013 00:21:02 UTC", 
+      "openUnix": 1385097662.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Thu, 28 Nov 2013 04:27:52 +0000", 
+      "closedUnix": 1385630872.0, 
+      "comments": 2, 
+      "lastUnix": 1385630872.0, 
+      "lastcomment": "Thu, 28 Nov 2013 04:27:52 +0000", 
+      "name": "vim-youcompleteme/0+20131009+gitcbb43ba-1", 
+      "number": "730194", 
+      "openStr": "Fri, 22 Nov 2013 14:21:02 UTC", 
+      "openUnix": 1385148062.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1385173085.0, 
+      "lastcomment": "Fri, 22 Nov 2013 21:18:05 +0200", 
+      "name": "libwebsitesnapshot-qt/1.03", 
+      "number": "730220", 
+      "openStr": "Fri, 22 Nov 2013 19:21:01 UTC", 
+      "openUnix": 1385166061.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 5, 
+      "lastUnix": 1385751075.0, 
+      "lastcomment": "Fri, 29 Nov 2013 13:51:15 +0100", 
+      "name": "tryton-modules-timesheet-cost/3.0.0-1", 
+      "number": "730306", 
+      "openStr": "Sat, 23 Nov 2013 19:42:02 UTC", 
+      "openUnix": 1385253722.0, 
+      "readyForReview": false, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Sun, 24 Nov 2013 11:59:57 -0500", 
+      "closedUnix": 1385312397.0, 
+      "comments": 2, 
+      "lastUnix": 1385312397.0, 
+      "lastcomment": "Sun, 24 Nov 2013 11:59:57 -0500", 
+      "name": "freewnn/1.1.1~a021+cvs20130302-4", 
+      "number": "730319", 
+      "openStr": "Sat, 23 Nov 2013 22:51:01 UTC", 
+      "openUnix": 1385265061.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Mon, 25 Nov 2013 16:27:01 +0000", 
+      "closedUnix": 1385414821.0, 
+      "comments": 2, 
+      "lastUnix": 1385414821.0, 
+      "lastcomment": "Mon, 25 Nov 2013 16:27:01 +0000", 
+      "name": "librasterlite/1.1g-2", 
+      "number": "730425", 
+      "openStr": "Sun, 24 Nov 2013 23:36:02 UTC", 
+      "openUnix": 1385354162.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1385413575.0, 
+      "lastcomment": "Mon, 25 Nov 2013 16:06:15 +0900", 
+      "name": "plsense/0.10+git20131030-1", 
+      "number": "730445", 
+      "openStr": "Mon, 25 Nov 2013 07:09:02 UTC", 
+      "openUnix": 1385381342.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Wed, 27 Nov 2013 04:25:43 +0000", 
+      "closedUnix": 1385544343.0, 
+      "comments": 2, 
+      "lastUnix": 1385544343.0, 
+      "lastcomment": "Wed, 27 Nov 2013 04:25:43 +0000", 
+      "name": "spatialite-tools/4.1.1-1", 
+      "number": "730560", 
+      "openStr": "Tue, 26 Nov 2013 15:33:01 UTC", 
+      "openUnix": 1385497981.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "Wed, 27 Nov 2013 04:25:41 +0000", 
+      "closedUnix": 1385544341.0, 
+      "comments": 2, 
+      "lastUnix": 1385544341.0, 
+      "lastcomment": "Wed, 27 Nov 2013 04:25:41 +0000", 
+      "name": "pyspatialite/3.0.1-3", 
+      "number": "730561", 
+      "openStr": "Tue, 26 Nov 2013 15:33:06 UTC", 
+      "openUnix": 1385497986.0, 
+      "readyForReview": false, 
+      "state": "accepted"
+    }, 
+    {
+      "closedStr": "", 
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1385567543.0, 
+      "lastcomment": "Wed, 27 Nov 2013 10:52:23 +0100", 
+      "name": "nauty/2.5r6+ds-1", 
+      "number": "730623", 
+      "openStr": "Wed, 27 Nov 2013 10:57:06 UTC", 
+      "openUnix": 1385567826.0, 
+      "readyForReview": true, 
+      "state": "open"
+    }, 
+    {
+      "closedStr": "Fri, 29 Nov 2013 16:28:05 +0000", 
+      "closedUnix": 1385760485.0, 
+      "comments": 2, 
+      "lastUnix": 1385760485.0, 
+      "lastcomment": "Fri, 29 Nov 2013 16:28:05 +0000", 
+      "name": "spatialite-gui/1.7.1-1", 
+      "number": "730767", 
+      "openStr": "Fri, 29 Nov 2013 11:36:02 UTC", 
+      "openUnix": 1385742962.0, 
+      "readyForReview": false, 
+      "state": "accepted"
     }
   ], 
-  "runDate": "Thu, 31 Oct 2013 20:44:15 -0000", 
-  "runUnix": 1383252255.553638
+  "runDate": "Sun, 01 Dec 2013 04:47:09 -0000", 
+  "runUnix": 1385873229.725423
 }
