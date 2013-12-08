@@ -1,6 +1,109 @@
 <html>
 <head>
 <title>Debian RFS Statistics</title>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.time.js"></script>
+<script type="text/javascript">
+
+function plotbydate( data, textstatus, jqXHR ) {
+    var openSeries = {
+        label: "open",
+        data: [],
+    }
+    var newSeries = {
+        label: "new",
+        data: [],
+    }
+    var acceptedSeries = {
+        label: "accepted",
+        data: [],
+    }
+    var droppedSeries = {
+        label: "dropped",
+        data: [],
+    }
+
+    for(var i=0; i<data.length; i++) {
+
+        theDate = data[i].startu*1000
+        openSeries.data.push( [theDate, data[i].open] )
+        newSeries.data.push( [theDate, data[i].new] )
+        acceptedSeries.data.push( [theDate, data[i].accepted] )
+        droppedSeries.data.push( [theDate, data[i].dropped] )
+    }
+
+    var plot = $.plot("#bydateplot",
+           [newSeries, acceptedSeries, droppedSeries, openSeries],
+           {
+               xaxis: {mode: "time",timeformat: "%m %Y"},
+               legend: {position: "nw"},
+               grid: {hoverable: true, clickable: true },
+           })
+
+    function showTooltip(x, y, contents) {
+        $('<div id="tooltip">' + contents + '</div>').css( {
+            position: 'absolute',
+            display: 'none',
+            top: y + 5,
+            left: x + 5,
+            border: '1px solid #fdd',
+            padding: '2px',
+            'background-color': '#fee',
+            opacity: 0.80
+        }).appendTo("body").fadeIn(200);
+    }
+
+    var previousPoint = null;
+    $("#bydateplot").bind("plothover", function (event, pos, item) {
+        $("#x").text(pos.x.toFixed(2));
+        $("#y").text(pos.y.toFixed(2));
+
+            if (item) {
+                if (previousPoint != item.dataIndex) {
+                    previousPoint = item.dataIndex;
+
+                    $("#tooltip").remove();
+                    var x = new Date(item.datapoint[0] + 5*3600*1000),
+                        y = item.datapoint[1].toFixed(0);
+
+                    x = (x.getMonth()+1) + "/" + (-100+x.getYear());
+
+                    showTooltip(item.pageX, item.pageY,
+                                item.series.label + " for " + x + " = " + y);
+                }
+            }
+            else {
+                $("#tooltip").remove();
+                previousPoint = null;
+            }
+    });
+
+    $("#bydateplot").bind("plotclick", function (event, pos, item) {
+        if (item) {
+            var startdate = item.datapoint[0];
+            var enddate;
+            if(item.dataIndex >= item.series.data.length -1) {
+                enddate = startdate + (31 * 3600 * 24 * 1000);
+            } else {
+                enddate= item.series.data[item.dataIndex + 1][0]
+            }
+            var state = item.series.label;
+            //$("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ":" + item.datapoint[1] + ".");
+            //plot.highlight(item.series, item.datapoint);
+
+
+            window.location = "getslice.html?start=" + startdate + "&end=" + enddate + "&state=" + state;
+        }
+    });
+
+}
+
+$(document).ready(function() {
+    $.getJSON('data/datestats.json', plotbydate);
+} )
+</script>
+
 </head>
 <body>
 This site contains data and interactive charts analyzing activity around Debian Request for Sponsor
@@ -13,5 +116,8 @@ Available charts:<br><br>
 <a href="discover.html?field=commentage&order=a">RFS Discovery</a> - Sortable table of open RFS<br>
 <a href="rfsactivity.html">RFS Activity</a> - RFS state change statistics over time.<br>
 <a href="commentactivity.html">Comment Activity</a> - Comment Activity vs. Age for open requests.
+<br>
+<br>
+<div id='bydateplot' style="width:800px;height:500px"></div>
 </body>
 </html>
