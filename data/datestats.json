@@ -77,9 +77,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 26, 
+    "accepted": 25, 
     "dateStr": "08/2012", 
-    "dropped": 7, 
+    "dropped": 8, 
     "endu": 1346457600, 
     "month": 8, 
     "new": 35, 
@@ -110,9 +110,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 31, 
+    "accepted": 32, 
     "dateStr": "11/2012", 
-    "dropped": 14, 
+    "dropped": 13, 
     "endu": 1354320000, 
     "month": 11, 
     "new": 46, 
@@ -143,9 +143,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 18, 
+    "accepted": 19, 
     "dateStr": "02/2013", 
-    "dropped": 11, 
+    "dropped": 10, 
     "endu": 1362096000, 
     "month": 2, 
     "new": 46, 
@@ -165,9 +165,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 27, 
+    "accepted": 25, 
     "dateStr": "04/2013", 
-    "dropped": 14, 
+    "dropped": 16, 
     "endu": 1367366400, 
     "month": 4, 
     "new": 20, 
@@ -176,9 +176,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 30, 
+    "accepted": 31, 
     "dateStr": "05/2013", 
-    "dropped": 16, 
+    "dropped": 15, 
     "endu": 1370044800, 
     "month": 5, 
     "new": 64, 
@@ -187,9 +187,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 14, 
+    "accepted": 15, 
     "dateStr": "06/2013", 
-    "dropped": 12, 
+    "dropped": 11, 
     "endu": 1372636800, 
     "month": 6, 
     "new": 40, 
@@ -231,25 +231,36 @@
     "year": 2013
   }, 
   {
-    "accepted": 33, 
+    "accepted": 34, 
     "dateStr": "10/2013", 
-    "dropped": 13, 
+    "dropped": 11, 
     "endu": 1383264000, 
     "month": 10, 
     "new": 53, 
-    "open": 138, 
+    "open": 139, 
     "startu": 1380585600, 
     "year": 2013
   }, 
   {
-    "accepted": 35, 
+    "accepted": 36, 
     "dateStr": "11/2013", 
-    "dropped": 16, 
+    "dropped": 14, 
     "endu": 1385856000, 
     "month": 11, 
     "new": 41, 
-    "open": 128, 
+    "open": 130, 
     "startu": 1383264000, 
     "year": 2013
-  } 
+  }, 
+  {
+    "accepted": 25, 
+    "dateStr": "12/2013", 
+    "dropped": 15, 
+    "endu": 1388534400, 
+    "month": 12, 
+    "new": 31, 
+    "open": 121, 
+    "startu": 1385856000, 
+    "year": 2013
+  }
 ]
