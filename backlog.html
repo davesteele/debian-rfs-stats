@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>RFS Backlog</title>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.time.js"></script>
+<script type="text/javascript">
+
+function plotbydate( data, textstatus, jqXHR ) {
+    var blSeries = {
+        label: "backlog",
+        data: [],
+    }
+
+    for(var i=0; i<data.length; i++) {
+
+        theDate = data[i].startu*1000
+        blSeries.data.push( [theDate, data[i].open / (data[i].accepted + data[i].dropped)] )
+    }
+
+    var plot = $.plot("#bydateplot",
+           [blSeries],
+           {
+               xaxis: {mode: "time",timeformat: "%m %Y"},
+               legend: {position: "nw"},
+           });
+
+}
+
+$(document).ready(function() {
+    $.getJSON('data/datestats.json', plotbydate);
+} )
+</script>
+
+</head>
+<body>
+The backlog is defined here as the open count divided by the sum of the dropped and accepted counts, for the month.
+It is a rough measure of how long a submitter waits for his package to be processed.<br><br>
+<br>
+<br>
+<div style="text-align:center;width:800px">RFS Backlog (months)<br>
+<div id='bydateplot' style="width:800px;height:500px"></div></div>
+</body>
+</html>
