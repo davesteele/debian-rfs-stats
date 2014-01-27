@@ -5,19 +5,19 @@
 <script language="javascript" type="text/javascript" src="include/purl.js"></script>
 <script type="text/javascript">
 
-function formRFSLine( num, name ) {
-    var result = "<a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=" + num + "\">" + num + " - " + name + "</a>" + "<br>\n";
+function formRFSLine( num, name, count ) {
+    var result = "<tr><td><a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=" + num + "\">" + num + " - " + name + "</a></td><td>" + count + "</td></tr>\n";
 
     return( result );
 }
 
 function newReport( data, start, end ) {
-    var text = "<br><br>New Packages<br>\n";
+    var text = "<tr><th>New Packages</th><td></td></tr>\n";
 
     for( var i=0; i < data.length; i++ ) {
         var dateOpened = data[i].openUnix;
         if( dateOpened > start && dateOpened < end ) {
-            text += formRFSLine( data[i].number, data[i].name );
+            text += formRFSLine( data[i].number, data[i].name, '' );
         }
     }
 
@@ -25,13 +25,14 @@ function newReport( data, start, end ) {
 }
 
 function closeReport( data, start, end, state ) {
-    var text = "<br><br>" + state + " Packages<br>\n";
+    var text = "<tr><th>" + state + " Packages</th><th>Age</th></tr>\n";
 
     for( var i=0; i < data.length; i++ ) {
         var dateOpened = data[i].openUnix;
         var dateClosed = data[i].closedUnix;
+        var age = Math.ceil((dateClosed - dateOpened) / 86400.0);
         if( dateClosed > start && dateClosed < end && data[i].state == state) {
-            text += formRFSLine( data[i].number, data[i].name );
+            text += formRFSLine( data[i].number, data[i].name, age );
         }
     }
 
@@ -40,13 +41,14 @@ function closeReport( data, start, end, state ) {
 
 
 function openReport( data, start, end ) {
-    var text = "<br><br>Open Packages<br>\n";
+    var text = "<tr><th>Open Packages</th><th>Age</th></tr>\n";
 
     for( var i=0; i < data.length; i++ ) {
         var dateOpened = data[i].openUnix;
         var dateClosed = data[i].closedUnix;
+        var age = Math.ceil((end - dateOpened) / 86400.0);
         if( dateOpened < end && (dateClosed > end || dateClosed == 0 ) ) {
-            text += formRFSLine( data[i].number, data[i].name );
+            text += formRFSLine( data[i].number, data[i].name, age );
         }
     }
 
@@ -66,10 +68,14 @@ function layoutpage( data, textstatus, jqXHR ) {
     $('#monthdate').text( months[theDate.getMonth()+1] + " " + (theDate.getYear() + 1900)  )
 
     //$('#datatarget').append( formRFSLine( '123', 'foo' )  + formRFSLine( '123', 'foo' ));
+
+    $('#datatarget').append('<table>\n');
+
     $('#datatarget').append( newReport( rfslist, start, end));
     $('#datatarget').append( closeReport( rfslist, start, end, 'accepted'));
     $('#datatarget').append( closeReport( rfslist, start, end, 'dropped'));
     $('#datatarget').append( openReport( rfslist, start, end));
+    $('#datatarget').append('</table>\n');
 }
 
 $(document).ready(function() {
@@ -80,8 +86,9 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+<br>
 RFS activity for the month of <span id='monthdate'>unknown</span> (<a href="data/rfsdata.csv">raw data</a>).<br>
- 
+<br><br> 
 
 
 <div id="datatarget"></div>
