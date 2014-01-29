@@ -11,6 +11,8 @@ function plotcomments( data, textstatus, jqXHR ) {
     var rfslist = data['rfslist'];
     var runDate = data['runDate'];
     var runUnix = data['runUnix'];
+    var lonely_count = 0;
+    var open_count = 0;
 
     var commentSeries = {
         //label: "comments",
@@ -20,6 +22,12 @@ function plotcomments( data, textstatus, jqXHR ) {
     for(var i=0; i<rfslist.length; i++) {
 
         if( rfslist[i].state == 'open' ) {
+            open_count += 1;
+
+            if(rfslist[i].comments == 1) {
+                lonely_count += 1;
+            }
+
             var age = runUnix - rfslist[i].openUnix;
 
             if(age < 86400) {
@@ -32,6 +40,13 @@ function plotcomments( data, textstatus, jqXHR ) {
             extraRFSInfo.push( [number, name] );
         }
     }
+
+    lonely_percent = Math.ceil(100.0 * lonely_count/open_count);
+
+
+    $("#opencnt").text(open_count.toString());
+    $("#lonelys").text(lonely_count.toString());
+    $("#percent").text(lonely_percent.toString());
 
     var plot = $.plot("#commentplot",
            [commentSeries],
@@ -118,6 +133,8 @@ $(document).ready(function() {
 Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> comment activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/rfsdata.csv">raw</a>)<br><br>
 Click/hover on a data point to get additional information.<br>
 <div id='commentplot' style="width:800px;height:500px"></div>
+<br><br>
+A total of <span id="lonelys">X</span> RFS submissions, out of <span id="opencnt">Z</span> currently open (<span id="percent">Y</span>%), have no responses. 
 
 
 
