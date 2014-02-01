@@ -1,392 +1,58 @@
 #!/usr/bin/python
 
 
-import urllib
-import re
-import os
-import time
+import rfsdb
+import rfsanalyze
 import datetime
-import calendar
-import pytz
-import email.utils
+import math
 import json
-import sys
-import gzip
-import apt_pkg
 
-from BeautifulSoup import BeautifulSoup
-from collections import namedtuple
+# todo - this shouldn't be here
+import email.utils
+import time
 
-import HTMLParser
-_htmlparser = HTMLParser.HTMLParser()
-unescape = _htmlparser.unescape
+db = rfsdb.init_db()
+rfsdb.update_package_lists(db)
+rfsdb.update_rfs_list(db)
 
-apt_pkg.init_config()
-apt_pkg.init_system()
+#for obj in rfsdb.opened_between(db):
+#    print obj.__repr__().encode('utf-8')
 
-RFS_URL="http://bugs.debian.org/cgi-bin/pkgreport.cgi?package=sponsorship-requests&archive=both"
+#for obj in rfsdb.closed_between(db):
+#    print obj.__repr__().encode('utf-8')
+#    print rfsdb.rfs_state(db, obj.num)
 
-BUG_URL="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug="
+#for obj in rfsdb.open_on(db, datetime.datetime.now()):
+#    print obj.__repr__().encode('utf-8')
 
-PKG_URL="http://http.us.debian.org/debian/dists/sid/main/binary-amd64/Packages.gz"
+#for obj in rfsdb.responses_between(db):
+#    print obj.__repr__().encode('utf-8')
 
+#print rfsdb.rfs_days_between(db)
 
-def get_cache_object( filename, url ):
-    if not os.access(filename, os.R_OK):
-        fname, hdrs = urllib.urlretrieve(url, filename)
-    return( open(filename, 'r').read() )
+#print rfsdb.rfs_days_between(db)/rfsdb.responses_between(db).count()
 
-def get_pkg_dict():
-    PKG = 'tmp/Packages'
-    GZIPPKG = PKG + '.gz'
 
-    get_cache_object( GZIPPKG, PKG_URL )
+datestats = rfsanalyze.monthly_stats(db)
 
-    pkglns = gzip.open(GZIPPKG, 'rb').read().split('\n')
+f = open( "data/datestats.json", 'w')
+f.write(json.dumps(datestats, sort_keys=True, indent=2))
+f.close()
 
-    pkgver = {}
+#print datestats
 
-    for line in pkglns:
-        if ": " in line:
-            (hdr, val) = line.split(' ', 1)
+with open("data/datestats.json", 'wb') as f:
+    f.write(json.dumps(datestats, sort_keys=True, indent=2))
 
-            if hdr in ["Package:", "Source:"]:
-                name = val
+pkgstats = rfsanalyze.rfs_stats(db)
+#print json.dumps(pkgstats, sort_keys=True, indent=2)
 
-            if hdr in ["Version:"]:
-                pkgver[name] = val
+rfsdata = {
+              'rfslist': pkgstats,
+              'runDate': email.utils.formatdate(time.mktime(datetime.datetime.now().timetuple())),
+              'runUnix' : time.time(),
 
-    return( pkgver )
+          }
+with open("data/rfsdata.json", 'wb') as f:
+    f.write(json.dumps(rfsdata, sort_keys=True, indent=2))
 
-class RFSList(object):
-    def __init__(self, rfs_url=RFS_URL):
-
-        self.raw = get_cache_object( 'tmp/rfslist.cache', RFS_URL ).split('\n')
-
-        buglines = [x for x in self.raw if re.search('bugreport.cgi.+RFS', x)]
-        bugs = [re.search('bug=([0-9]+)', x).group(1) for x in buglines]
-
-        oldbugs = [x['number'] for x in json.loads(open('data/rfsdata.json', 'r').read())['rfslist']]
-
-        self.bugs = sorted(list(set(bugs) | set(oldbugs)))
-
-    def __iter__(self):
-        for bug in self.bugs:
-            yield(bug)
-
-class RFS(object):
-    def __init__(self, bugnum, pkgdict, bug_url=BUG_URL):
-        self.bugnum = bugnum
-
-        text = get_cache_object('tmp/rfs%s.cache' % bugnum, bug_url+bugnum)
-        self.raw = text.split('\n')
-
-        self.pkgdict = pkgdict
-
-        self.soup = BeautifulSoup( text )
-
-        self.submitter = self._submitter()
-
-        self.closed = self._isClosed()
-
-    def isDropped(self):
-        srch = re.compile('Package .+ has been removed from mentors.')
-
-        removed_from_mentors = bool([x for x in self.raw if srch.search(x)])
-
-        if not removed_from_mentors:
-            return( False )
-
-        name, ver = self.pkgName()
-        if(name in self.pkgdict and ver and apt_pkg.version_compare(ver, self.pkgdict[name]) <= 0 ):
-            return( False )
-        else:
-            return( True )
- 
-        return(bool([x for x in self.raw if srch.search(x)]))
-
-    def isAccepted(self):
-        #srch = re.compile('Package .+ version .+ is in .+ now.')
-        #return(bool([x for x in self.raw if srch.search(x)]))
-
-        # In practice, not isDropped() is more reliable than the
-        # previous isAccepted()
-        return(self.isClosed() and not self.isDropped())
-
-    def _isClosed(self):
-        srch = re.compile('<strong>Bug reopened</strong>|%s\-done|%s\-close'
-                          % (self.bugnum, self.bugnum))
-
-        matches = [x for x in self.raw if srch.search(x)]
-
-        #print matches
-
-        if( [x for x in self.raw if '<strong>Done:</strong>' in x] ):
-            return True
-
-        if not bool(matches):
-            return False
-
-        return( '-done' in matches[-1] or '-close' in matches[-1] )
-        #return(bool([x for x in self.raw if srch.search(x)]))
-
-    def isClosed(self):
-        return( self.closed )
-
-    def isOpen(self):
-        return(not self.isClosed())
-
-    def state(self):
-        if self.isOpen():
-            return('open')
-        elif self.isDropped():
-            return('dropped')
-        elif self.isAccepted():
-            return('accepted')
-
-        raise
-
-    def numComments(self):
-        return(len([x for x in self.raw if re.search('>From:<', x)]))
-
-    def dateOpened(self):
-        dateline = [x for x in self.raw if 'Date:' in x][0]
-        dateStr = re.search('<p>Date: (.+)</p>', dateline).group(1)
-        unixTime = time.mktime(email.utils.parsedate(dateStr))
-        return (dateStr, unixTime)
-
-    def dateClosed(self):
-        pass
-        if self.isOpen():
-            return( "", 0 )
-
-        dateSearch = re.compile('headerfield.+Date:</span>')
-        dateLine = [x for x in self.raw if dateSearch.search(x)][-1]
-        dateStr = re.search('</span> (.+)</div>', dateLine).group(1)
-        unixTime = time.mktime(email.utils.parsedate(dateStr))
-        return (dateStr, unixTime)
-
-    def pkgName(self):
-        pkgLine = self.raw[2]
-        pkgName = pkgLine.split()[3]
-        pkgVer = ''
-
-        if '/' in pkgName:
-            foo = pkgName
-            (pkgName, pkgVer) = foo.split('/')
-
-        return( pkgName, pkgVer )
-
-    def comments(self):
-
-        Comment = namedtuple( 'Comment', 'bugnum sender datestr, dateu' )
-        commentdivs = self.soup.findAll('div', attrs={'class': 'headers'})
-
-        for commentdiv in commentdivs:
-            for headerdiv in commentdiv.findAll('div', attrs={'class': 'header'}):
-
-                header = headerdiv.span.string
-                contents = unescape(headerdiv.contents[1]).strip()
-                #print header, contents
-                if 'From:' in header:
-                    fromstr = contents
-                if 'Date:' in header:
-                    datestr = contents
-
-            dateu = time.mktime(email.utils.parsedate(datestr))
-
-            comment = Comment(self.bugnum, fromstr, datestr, dateu)
-
-            yield comment
-
-    def _submitter(self):
-        sender = self.soup.find('div', attrs={'class': 'header'} ).contents[1]
-        sender = sender.strip()
-        sender = unescape( sender )
-
-        return( sender )
-
-
-    def lastComment(self):
-        return( [x for x in self.comments()][-1] )
-
-    def readyForReview(self):
-        #print self.submitter, self.lastComment().sender
-        return( self.isOpen() and self.submitter == self.lastComment().sender )
-
-
-csvfl = open('data/rfsdata.csv', 'w')
-csvfl.write( "number, name, openStr, openUnix, closedStr, closedUnix, state, comments, lastcomment, lastUnix, readyForReview\n" )
-
-
-rfslist = []
-pkg_dict = get_pkg_dict()
-for rfsnum in RFSList():
-
-    print "Processing ", rfsnum
-
-    rfs = RFS(rfsnum, pkg_dict)
-
-
-    #age = max( time.time() - rfs.dateOpened()[1], 86400 )
-    lastcomment = [x for x in rfs.comments()][-1]
-
-    entry = {
-              'number':     rfsnum,
-              'name':       '/'.join(rfs.pkgName()),
-              'openStr':    rfs.dateOpened()[0],
-              'openUnix':   rfs.dateOpened()[1],
-              'closedStr':  rfs.dateClosed()[0],
-              'closedUnix': rfs.dateClosed()[1],
-              'state':      rfs.state(),
-              'comments':   rfs.numComments(),
-              'lastcomment': lastcomment.datestr,
-              'lastUnix': lastcomment.dateu,
-              'readyForReview': rfs.readyForReview(),
-            }
-
-    #print rfs.readyForReview()
-    rfslist.append(entry)
-
-    csvline = "\"" + \
-            "\", \"".join( [
-              rfsnum,
-              '/'.join(rfs.pkgName()),
-              rfs.dateOpened()[0],
-              str(rfs.dateOpened()[1]),
-              rfs.dateClosed()[0],
-              str(rfs.dateClosed()[1]),
-              rfs.state(),
-              str(rfs.numComments()),
-              lastcomment.datestr,
-              str(lastcomment.dateu),
-              str(rfs.readyForReview()),
-
-              ] ) \
-            + "\""
-
-    csvfl.write( csvline )
-    csvfl.write('\n')
-
-
-csvfl.close()
-
-todaydate = email.utils.formatdate(time.mktime(datetime.datetime.now().timetuple()))
-todayunix = time.time()
-
-jsonstruct = {
-
-               'runDate': todaydate,
-               'runUnix': todayunix,
-               'rfslist': rfslist,
-             }
-
-output = open( 'data/rfsdata.json', 'w')
-
-output.write(json.dumps(jsonstruct, sort_keys=True, indent=2))
-
-output.close()
-
-
-def addmonth(dtu):
-    dt = datetime.datetime.utcfromtimestamp(dtu)
-
-    if dt.month == 12:
-        #ndt = datetime.datetime( dt.year+1, 1, dt.day )
-        ndt = dt.replace( dt.year+1, 1 )
-    else:
-        #ndt = datetime.datetime( dt.year, dt.month+1, dt.day)
-        ndt = dt.replace( dt.year, dt.month+1)
-
-    return( calendar.timegm(ndt.timetuple()))
-
-class monthIter(object):
-    def __init__(self, firstu, lastu):
-        #print firstu, lastu
-        firstdt = datetime.datetime.utcfromtimestamp(firstu)
-        startdt = datetime.datetime( firstdt.year, firstdt.month, 1, 0,0,0,0, pytz.utc )
-        self.startu = calendar.timegm(startdt.timetuple())
-
-        self.lastu = lastu
-
-    def __iter__(self):
-        dtu = self.startu
-
-        while dtu < self.lastu:
-            #print dtu
-            yield dtu
-            dtu = addmonth(dtu)
-
-
-def getRFSSlice(rfslist, startu, endu, state):
-
-    slice = None
-
-    if state in ['new']:
-        slice = [x for x in rfslist if x['openUnix']>startu and x['openUnix']<endu]
-    elif state in ['accepted', 'dropped']:
-        slice = [x for x in rfslist if x['closedUnix']>startu and x['closedUnix']<endu
-                                       and x['state']==state]
-    elif state in ['open']:
-        slice = [x for x in rfslist if x['openUnix']<endu
-                                    and (x['closedUnix']==0 or x['closedUnix']>endu)]
-    else:
-        raise
-
-    return slice
-
-
-firstu = min([x['openUnix'] for x in rfslist])
-lastu = time.time()
-
-datestatscsv = open( 'data/datestats.csv', 'w' )
-datestatscsv.write( 'date, year, month, unixstart, unixend, new, accepted, dropped, open\n' )
-
-entryList = []
-
-for dtu in monthIter(firstu, lastu):
-    #print dtu, addmonth(dtu)
-
-    numnew =      len(getRFSSlice(rfslist, dtu, addmonth(dtu), 'new'))
-    numaccepted = len(getRFSSlice(rfslist, dtu, addmonth(dtu), 'accepted'))
-    numdropped =  len(getRFSSlice(rfslist, dtu, addmonth(dtu), 'dropped'))
-    numopen =     len(getRFSSlice(rfslist, dtu, addmonth(dtu), 'open'))
-
-
-    dt = datetime.datetime.utcfromtimestamp(dtu)
-
-    datestatscsv.write( ", ".join( [
-                      dt.strftime('%m/%Y'),
-                      str(dt.year),
-                      str(dt.month),
-                      str(dtu),
-                      str(addmonth(dtu)),
-                      str(numnew),
-                      str(numaccepted),
-                      str(numdropped),
-                      str(numopen),
-                   ] ) )
-    datestatscsv.write("\n")
-
-    entry = {
-              'dateStr':  dt.strftime('%m/%Y'),
-              'year':     dt.year,
-              'month':    dt.month,
-              'startu':   dtu,
-              'endu':     addmonth(dtu),
-              'new':      numnew,
-              'accepted': numaccepted,
-              'dropped':  numdropped,
-              'open':     numopen,
-
-        }
-
-    entryList.append(entry)
-
-
-output = open( 'data/datestats.json', 'w')
-output.write(json.dumps(entryList, sort_keys=True, indent=2))
-output.close()
-
-
-datestatscsv.close()
