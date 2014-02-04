@@ -1,0 +1,47 @@
+<html<head>
+<title>RFS Activity</title>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="include/flot/jquery.flot.time.js"></script>
+<script type="text/javascript">
+
+function plotbydate( data, textstatus, jqXHR ) {
+    var mdbrSeries = {
+        label: "Avg. Response Delay (days)",
+        data: [],
+    }
+
+    for(var i=0; i<data.length; i++) {
+
+        theDate = data[i].startu*1000
+        mdbrSeries.data.push( [theDate, data[i].mdbr] )
+    }
+
+    var plot = $.plot("#bydateplot",
+           [mdbrSeries],
+           {
+               xaxis: {mode: "time",timeformat: "%m %Y"},
+               legend: {position: "nw"}
+           })
+
+}
+
+$(document).ready(function() {
+    $.getJSON('data/datestats.json', plotbydate);
+} )
+</script>
+</head>
+<body>
+
+<br>
+RFS Mean Delay between non-submitter comments.
+<br>
+<br>
+<br>
+<div id='bydateplot' style="width:800px;height:500px"></div>
+
+
+
+
+</body>
+</html>
