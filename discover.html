@@ -61,9 +61,7 @@ function sortlist( list, field, order ) {
     else if(field == 'age')
           list.sort(function(a,b) { return(parseFloat(a.openUnix) - parseFloat(b.openUnix) ) })
     else if(field == 'commentage')
-          list.sort(function(a,b) { return(parseInt(a.lastUnix) - parseInt(b.lastUnix) ) })
-    else if(field == 'ready')
-          list.sort(byReady);
+          list.sort(function(a,b) { return(parseInt(a.lastUnix) - parseInt(b.lastUnix) ) });
 
     if(order == 'r')
         list.reverse()
@@ -87,8 +85,7 @@ function maketable(data, textstatus, jqXHR) {
                  makecell("package", "Package", sortfield, sortorder) +
                  makecell("numcomments", "# Comments", sortfield, sortorder) +
                  makecell("age", "Age (days)", sortfield, sortorder) +
-                 makecell("commentage", "LastComment (days)", sortfield, sortorder) +
-                 makecell("ready", "Ready For Review", sortfield, sortorder) +
+                 makecell("commentage", "LastComment (days)", sortfield, sortorder)
                  "\n";
 
     for(var i=0; i<rfslist.length; i++) {
@@ -102,8 +99,7 @@ function maketable(data, textstatus, jqXHR) {
                          rfslist[i].name + "</td><td>" +
                          rfslist[i].comments + "</td><td>" +
                          pkg_age + "</td><td>" +
-                         cmt_age + "</td><td>" +
-                         rfslist[i].readyForReview + "</td>" +
+                         cmt_age + "</td>" +
                          "</tr>\n";
         }
     }
