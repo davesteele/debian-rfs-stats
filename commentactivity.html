@@ -24,7 +24,7 @@ function plotcomments( data, textstatus, jqXHR ) {
         if( rfslist[i].state == 'open' ) {
             open_count += 1;
 
-            if(rfslist[i].comments == 1) {
+            if(rfslist[i].responses == 0) {
                 lonely_count += 1;
             }
 
@@ -33,7 +33,7 @@ function plotcomments( data, textstatus, jqXHR ) {
             if(age < 86400) {
                 age = 86400;
             }
-            commentSeries.data.push( [age/86400, rfslist[i].comments] );
+            commentSeries.data.push( [age/86400, rfslist[i].responses] );
 
             var number = rfslist[i].number;
             var name = rfslist[i].name;
@@ -56,7 +56,8 @@ function plotcomments( data, textstatus, jqXHR ) {
                         transform: function (v) { return Math.log(v); },
                         inverseTransform: function (v) { return Math.exp(v); }
                       },
-               yaxis: { axisLabel: 'Number of Comments' },
+               yaxis: { axisLabel: 'Number of Comments',
+                        min: -1 },
                legend: {position: "nw"},
                grid: {hoverable: true, clickable: true },
                series: { lines: { show: false }, points: { show: true } }
@@ -130,7 +131,7 @@ $(document).ready(function() {
 </head>
 <body>
 
-Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> comment activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/rfsdata.csv">raw</a>)<br><br>
+Interactive plot of Debian <a href="http://mentors.debian.net/sponsor/rfs-howto">RFS</a> response activity in <a href="http://bugs.debian.org/cgi-bin/pkgreport.cgi?dist=unstable;package=sponsorship-requests&archive=both">sponsorship-requests</a> for open entries (<a href="data/rfsdata.csv">raw</a>)<br><br>
 Click/hover on a data point to get additional information.<br>
 <div id='commentplot' style="width:800px;height:500px"></div>
 <br><br>
