@@ -11,6 +11,8 @@ for fl in os.listdir(basedir):
           and 'cache' in ffl:
         print "Deleting %s" % ffl
         os.unlink( ffl )
+    if "Package" in fl:
+        os.unlink( ffl )
 
 otherlist = [os.path.join(basedir, x) for x in ["rfslist.cache", "Packages.gz"]]
 [os.unlink(x) for x in otherlist if os.access(x, os.R_OK)]
