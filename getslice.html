@@ -25,7 +25,7 @@ function newReport( data, start, end ) {
 }
 
 function closeReport( data, start, end, state ) {
-    var text = "<tr><th>" + state + " Packages</th><th>Age</th></tr>\n";
+    var text = "<tr><th id=\"" + state + "\">" + state + " Packages</th><th>Age</th></tr>\n";
 
     for( var i=0; i < data.length; i++ ) {
         var dateOpened = data[i].openUnix;
