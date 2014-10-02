@@ -57,6 +57,7 @@ def rfs_stats(db):
     rfslist = session.query(rfsdb.RFS).order_by(rfsdb.RFS.num)
 
     for rfs in rfslist:
+        print rfs.num
         stats = {}
         returnval.append(stats)
 
@@ -71,8 +72,11 @@ def rfs_stats(db):
         stats['openUnix'] = calendar.timegm(rfs.opened.utctimetuple())
         stats['comments'] = comment_query.count()
         stats['responses'] = response_query.count()
-        last_comment_date = comment_query.order_by("date desc").first().date
-        stats['lastUnix'] = calendar.timegm(last_comment_date.utctimetuple())
+        print " %s, %s" % (stats['comments'], stats['responses'])
+        stats['lastUnix'] = 0
+        if stats['comments']:
+            last_comment_date = comment_query.order_by("date desc").first().date
+            stats['lastUnix'] = calendar.timegm(last_comment_date.utctimetuple())
 
         stats['number'] = rfs.num
         stats['state'] = rfsdb.rfs_state(db, rfs.num)
