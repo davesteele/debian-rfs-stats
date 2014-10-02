@@ -14,7 +14,7 @@ for fl in os.listdir(basedir):
     if "Package" in fl:
         os.unlink( ffl )
 
-otherlist = [os.path.join(basedir, x) for x in ["rfslist.cache", "Packages.gz"]]
+otherlist = [os.path.join(basedir, x) for x in ["rfslist.cache", "Packages.gz", "popcon"]]
 [os.unlink(x) for x in otherlist if os.access(x, os.R_OK)]
 
 
