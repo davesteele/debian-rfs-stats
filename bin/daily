@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm ./rfsstats.db
+./bin/cleanup
+./bin/processrfs.py >/dev/null
