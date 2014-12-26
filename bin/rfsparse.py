@@ -40,6 +40,10 @@ def get_comment_params(rfsnum, rfs, commenttext):
 
 def _is_closed(rfstext):
 
+    if re.search('<title>.+RFS:', rfstext) is None:
+        print "is closed"
+        return True
+
     return(re.search('<strong>Done:</strong>', rfstext, re.MULTILINE) is not None)
 
     srch = re.compile('<strong>Bug reopened</strong>|%s\-done|%s\-close'
