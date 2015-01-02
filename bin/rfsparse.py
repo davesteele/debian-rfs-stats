@@ -124,11 +124,9 @@ class RFSList(object):
         self.raw = rfsfetch.get_cache_object( 'tmp/rfslist.cache', RFS_URL ).split('\n')
 
         buglines = [x for x in self.raw if re.search('bugreport.cgi.+RFS', x)]
-        bugs = [re.search('bug=([0-9]+)', x).group(1) for x in buglines]
+        self.bugs = [re.search('bug=([0-9]+)', x).group(1) for x in buglines]
 
-        oldbugs = [x['number'] for x in json.loads(open('data/rfsdata.json', 'r').read())['rfslist']]
 
-        self.bugs = sorted(list(set(bugs) | set(oldbugs)))
 
     def __iter__(self):
         for bug in self.bugs:
