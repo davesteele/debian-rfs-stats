@@ -152,13 +152,15 @@ def update_package_lists(db):
             dist.sha = textsha
 
             for (pkg, ver) in rfsparse.pkgiter(pkgtext):
-                pkglist.append(Package(distid=dist.id, name=pkg, ver=ver))
+#                pkglist.append(Package(distid=dist.id, name=pkg, ver=ver))
+                session.add(Package(distid=dist.id, name=pkg, ver=ver))
+                session.commit()
 
     for dist in newdistlist:
         session.query(Package).filter_by(distid = dist.id).delete()
     session.commit()
 
-    session.add_all(pkglist)
+#    session.add_all(pkglist)
     session.commit()
 
 def init_db(db_file = 'sqlite:///rfsstats.db'):
