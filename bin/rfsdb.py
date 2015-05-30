@@ -140,28 +140,19 @@ def update_rfs_list(db):
 def update_package_lists(db):
     session = db()
 
-    pkglist = []
-    newdistlist = []
     for dist in session.query(Dist).all():
         pkgtext = rfsfetch.get_package_text(dist.name, dist.arch)
 
         textsha = rfsparse.hash(pkgtext)
         if dist.sha != textsha:
-            newdistlist.append(dist)
+            session.query(Package).filter_by(distid = dist.id).delete()
+            session.commit()
 
             dist.sha = textsha
 
             for (pkg, ver) in rfsparse.pkgiter(pkgtext):
-#                pkglist.append(Package(distid=dist.id, name=pkg, ver=ver))
                 session.add(Package(distid=dist.id, name=pkg, ver=ver))
                 session.commit()
-
-    for dist in newdistlist:
-        session.query(Package).filter_by(distid = dist.id).delete()
-    session.commit()
-
-#    session.add_all(pkglist)
-    session.commit()
 
 def init_db(db_file = 'sqlite:///rfsstats.db'):
 
