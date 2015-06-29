@@ -24,9 +24,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 37, 
+    "accepted": 36, 
     "dateStr": "3/2012", 
-    "dropped": 7, 
+    "dropped": 8, 
     "endu": 1333238400, 
     "mdbr": 21.10037181712963, 
     "month": 3, 
@@ -60,9 +60,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 66, 
+    "accepted": 64, 
     "dateStr": "6/2012", 
-    "dropped": 23, 
+    "dropped": 25, 
     "endu": 1341100800, 
     "mdbr": 14.144073628917377, 
     "month": 6, 
@@ -252,9 +252,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 28, 
+    "accepted": 29, 
     "dateStr": "10/2013", 
-    "dropped": 16, 
+    "dropped": 15, 
     "endu": 1383264000, 
     "mdbr": 44.277195299919484, 
     "month": 10, 
@@ -264,9 +264,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 34, 
+    "accepted": 35, 
     "dateStr": "11/2013", 
-    "dropped": 16, 
+    "dropped": 15, 
     "endu": 1385856000, 
     "mdbr": 30.550396947873804, 
     "month": 11, 
@@ -288,9 +288,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 60, 
+    "accepted": 61, 
     "dateStr": "1/2014", 
-    "dropped": 24, 
+    "dropped": 23, 
     "endu": 1391212800, 
     "mdbr": 18.580887914230022, 
     "month": 1, 
@@ -312,9 +312,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 47, 
+    "accepted": 48, 
     "dateStr": "3/2014", 
-    "dropped": 18, 
+    "dropped": 17, 
     "endu": 1396310400, 
     "mdbr": 32.23279831608569, 
     "month": 3, 
@@ -336,9 +336,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 34, 
+    "accepted": 36, 
     "dateStr": "5/2014", 
-    "dropped": 16, 
+    "dropped": 14, 
     "endu": 1401580800, 
     "mdbr": 26.723214646464644, 
     "month": 5, 
@@ -372,9 +372,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 65, 
+    "accepted": 66, 
     "dateStr": "8/2014", 
-    "dropped": 25, 
+    "dropped": 24, 
     "endu": 1409529600, 
     "mdbr": 8.518297654576063, 
     "month": 8, 
@@ -396,9 +396,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 80, 
+    "accepted": 82, 
     "dateStr": "10/2014", 
-    "dropped": 24, 
+    "dropped": 22, 
     "endu": 1414800000, 
     "mdbr": 13.540741289511494, 
     "month": 10, 
@@ -408,9 +408,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 36, 
+    "accepted": 37, 
     "dateStr": "11/2014", 
-    "dropped": 17, 
+    "dropped": 16, 
     "endu": 1417392000, 
     "mdbr": 28.513548280423283, 
     "month": 11, 
@@ -420,9 +420,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 44, 
+    "accepted": 47, 
     "dateStr": "12/2014", 
-    "dropped": 26, 
+    "dropped": 23, 
     "endu": 1420070400, 
     "mdbr": 31.85093696907917, 
     "month": 12, 
@@ -432,21 +432,21 @@
     "year": 2014
   }, 
   {
-    "accepted": 24, 
+    "accepted": 29, 
     "dateStr": "1/2015", 
-    "dropped": 40, 
+    "dropped": 36, 
     "endu": 1422748800, 
     "mdbr": 24.213748272526256, 
     "month": 1, 
-    "new": 43, 
+    "new": 44, 
     "open": 91, 
     "startu": 1420070400, 
     "year": 2015
   }, 
   {
-    "accepted": 13, 
+    "accepted": 16, 
     "dateStr": "2/2015", 
-    "dropped": 12, 
+    "dropped": 9, 
     "endu": 1425168000, 
     "mdbr": 43.6087513067503, 
     "month": 2, 
@@ -456,9 +456,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 17, 
+    "accepted": 19, 
     "dateStr": "3/2015", 
-    "dropped": 16, 
+    "dropped": 14, 
     "endu": 1427846400, 
     "mdbr": 32.078507617355726, 
     "month": 3, 
@@ -468,27 +468,39 @@
     "year": 2015
   }, 
   {
-    "accepted": 13, 
+    "accepted": 16, 
     "dateStr": "4/2015", 
-    "dropped": 28, 
+    "dropped": 25, 
     "endu": 1430438400, 
-    "mdbr": 28.14043342496142, 
+    "mdbr": 28.1047712628866, 
     "month": 4, 
-    "new": 27, 
-    "open": 81, 
+    "new": 29, 
+    "open": 83, 
     "startu": 1427846400, 
     "year": 2015
   }, 
   {
-    "accepted": 17, 
+    "accepted": 21, 
     "dateStr": "5/2015", 
-    "dropped": 16, 
+    "dropped": 13, 
     "endu": 1433116800, 
-    "mdbr": 24.19316100437066, 
+    "mdbr": 26.26630711553945, 
     "month": 5, 
-    "new": 31, 
-    "open": 79, 
+    "new": 32, 
+    "open": 81, 
     "startu": 1430438400, 
+    "year": 2015
+  }, 
+  {
+    "accepted": 25, 
+    "dateStr": "6/2015", 
+    "dropped": 19, 
+    "endu": 1435708800, 
+    "mdbr": 27.973363581392682, 
+    "month": 6, 
+    "new": 47, 
+    "open": 84, 
+    "startu": 1433116800, 
     "year": 2015
   }
 ]
