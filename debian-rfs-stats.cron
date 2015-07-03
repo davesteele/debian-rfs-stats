@@ -1,1 +1,2 @@
 0 1 * * * daves (cd /home/daves/github/debian-rfs-stats; ./bin/daily >/dev/null)
+0 12 1 * * daves (cd /home/daves/github/debian-rfs-stats; git add data/*.json; git commit -m "Monthly update"; git push origin gh-pages)

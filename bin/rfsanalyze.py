@@ -14,7 +14,7 @@ def addmonth(dt):
 
     return(ndt)
 
-def monthIter(start = datetime.datetime(2012, 1, 1), end = datetime.datetime.now()):
+def monthIter(start = datetime.datetime(2012, 1, 1), end = datetime.datetime.now()-86400):
     current = start
 
     while current < end:
