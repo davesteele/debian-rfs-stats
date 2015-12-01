@@ -198,7 +198,7 @@
       "number": "658772", 
       "openUnix": 1328485141, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1333826501, 
@@ -688,7 +688,7 @@
       "number": "661498", 
       "openUnix": 1330363442, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1332611105, 
@@ -878,7 +878,7 @@
       "number": "662026", 
       "openUnix": 1330797062, 
       "responses": 5, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1331162520, 
@@ -1418,7 +1418,7 @@
       "number": "666081", 
       "openUnix": 1332947521, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1333735330, 
@@ -1728,7 +1728,7 @@
       "number": "668076", 
       "openUnix": 1333906742, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1335744060, 
@@ -1938,7 +1938,7 @@
       "number": "669717", 
       "openUnix": 1335006035, 
       "responses": 2, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1336412521, 
@@ -1948,7 +1948,7 @@
       "number": "669719", 
       "openUnix": 1335006403, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1349841720, 
@@ -2008,7 +2008,7 @@
       "number": "670176", 
       "openUnix": 1335201661, 
       "responses": 8, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1351657203, 
@@ -2108,7 +2108,7 @@
       "number": "670696", 
       "openUnix": 1335603426, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1347796502, 
@@ -2388,7 +2388,7 @@
       "number": "672290", 
       "openUnix": 1336589281, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1348745401, 
@@ -2818,7 +2818,7 @@
       "number": "674959", 
       "openUnix": 1338245281, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1338437641, 
@@ -2848,7 +2848,7 @@
       "number": "675034", 
       "openUnix": 1338297302, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1350447600, 
@@ -3158,7 +3158,7 @@
       "number": "676619", 
       "openUnix": 1339149258, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1339196762, 
@@ -3208,7 +3208,7 @@
       "number": "676722", 
       "openUnix": 1339225741, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1339388041, 
@@ -3678,7 +3678,7 @@
       "number": "678581", 
       "openUnix": 1340401141, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1341007022, 
@@ -3768,7 +3768,7 @@
       "number": "679045", 
       "openUnix": 1340664122, 
       "responses": 2, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1365999723, 
@@ -4228,7 +4228,7 @@
       "number": "683120", 
       "openUnix": 1343512981, 
       "responses": 26, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1344695102, 
@@ -4528,7 +4528,7 @@
       "number": "685697", 
       "openUnix": 1345733462, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1346117641, 
@@ -4538,7 +4538,7 @@
       "number": "685836", 
       "openUnix": 1345865221, 
       "responses": 9, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1349022001, 
@@ -4578,7 +4578,7 @@
       "number": "686042", 
       "openUnix": 1346112001, 
       "responses": 5, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1348158001, 
@@ -4598,7 +4598,7 @@
       "number": "686070", 
       "openUnix": 1346143141, 
       "responses": 17, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1346536583, 
@@ -4678,7 +4678,7 @@
       "number": "687389", 
       "openUnix": 1347450481, 
       "responses": 2, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1358958002, 
@@ -4718,7 +4718,7 @@
       "number": "687479", 
       "openUnix": 1347517623, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1365760685, 
@@ -5658,7 +5658,7 @@
       "number": "694778", 
       "openUnix": 1354263301, 
       "responses": 10, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1358439602, 
@@ -5688,7 +5688,7 @@
       "number": "694869", 
       "openUnix": 1354373281, 
       "responses": 0, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1354466929, 
@@ -5708,7 +5708,7 @@
       "number": "694887", 
       "openUnix": 1354392002, 
       "responses": 0, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1372825383, 
@@ -5968,7 +5968,7 @@
       "number": "696769", 
       "openUnix": 1356561364, 
       "responses": 4, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1356581882, 
@@ -6158,7 +6158,7 @@
       "number": "698547", 
       "openUnix": 1358678342, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1368850923, 
@@ -6358,7 +6358,7 @@
       "number": "700040", 
       "openUnix": 1360264142, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1365826923, 
@@ -6498,7 +6498,7 @@
       "number": "700567", 
       "openUnix": 1360844101, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1361161203, 
@@ -7678,7 +7678,7 @@
       "number": "707292", 
       "openUnix": 1368041775, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1369688820, 
@@ -8108,7 +8108,7 @@
       "number": "712298", 
       "openUnix": 1371283026, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1383582365, 
@@ -8298,7 +8298,7 @@
       "number": "714087", 
       "openUnix": 1372171501, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1372966771, 
@@ -8348,7 +8348,7 @@
       "number": "714404", 
       "openUnix": 1372455002, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1375510210, 
@@ -8458,7 +8458,7 @@
       "number": "715149", 
       "openUnix": 1373104081, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1386865622, 
@@ -8618,7 +8618,7 @@
       "number": "717262", 
       "openUnix": 1374157981, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1377196864, 
@@ -9758,7 +9758,7 @@
       "number": "725499", 
       "openUnix": 1381077181, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1381335784, 
@@ -9848,7 +9848,7 @@
       "number": "726049", 
       "openUnix": 1381504141, 
       "responses": 1, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1393215901, 
@@ -10058,7 +10058,7 @@
       "number": "727025", 
       "openUnix": 1382371026, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1382718423, 
@@ -10408,7 +10408,7 @@
       "number": "729374", 
       "openUnix": 1384266422, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1396758365, 
@@ -10828,7 +10828,7 @@
       "number": "733182", 
       "openUnix": 1388088541, 
       "responses": 3, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1396229701, 
@@ -11868,7 +11868,7 @@
       "number": "738282", 
       "openUnix": 1391895542, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1392152403, 
@@ -12538,7 +12538,7 @@
       "number": "741501", 
       "openUnix": 1394686801, 
       "responses": 3, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1394900941, 
@@ -13278,7 +13278,7 @@
       "number": "746257", 
       "openUnix": 1398696842, 
       "responses": 2, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1405700641, 
@@ -13558,7 +13558,7 @@
       "number": "748613", 
       "openUnix": 1400447341, 
       "responses": 6, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1400982722, 
@@ -13568,7 +13568,7 @@
       "number": "748674", 
       "openUnix": 1400510521, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1400513643, 
@@ -13898,7 +13898,7 @@
       "number": "750411", 
       "openUnix": 1401785462, 
       "responses": 0, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1403550423, 
@@ -14358,7 +14358,7 @@
       "number": "752520", 
       "openUnix": 1403613734, 
       "responses": 7, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1404075181, 
@@ -15248,7 +15248,7 @@
       "number": "757222", 
       "openUnix": 1407319381, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1407731044, 
@@ -15328,7 +15328,7 @@
       "number": "757560", 
       "openUnix": 1407581461, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1407804841, 
@@ -15358,7 +15358,7 @@
       "number": "757669", 
       "openUnix": 1407665161, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1407723484, 
@@ -15478,7 +15478,7 @@
       "number": "758244", 
       "openUnix": 1408125781, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1410119884, 
@@ -15768,7 +15768,7 @@
       "number": "759821", 
       "openUnix": 1409422862, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1410003419, 
@@ -16088,7 +16088,7 @@
       "number": "761643", 
       "openUnix": 1410777182, 
       "responses": 5, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1410828782, 
@@ -16138,7 +16138,7 @@
       "number": "762015", 
       "openUnix": 1410980582, 
       "responses": 7, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1411446302, 
@@ -16208,7 +16208,7 @@
       "number": "762678", 
       "openUnix": 1411556762, 
       "responses": 3, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1414406164, 
@@ -16411,14 +16411,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1412331365, 
+      "closedUnix": 1448253122, 
+      "comments": 2, 
+      "lastUnix": 1448253122, 
       "name": "python-trezor/0.6.5-1", 
       "number": "763853", 
       "openUnix": 1412324461, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1412699103, 
@@ -16668,7 +16668,7 @@
       "number": "765390", 
       "openUnix": 1413305106, 
       "responses": 4, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1413390302, 
@@ -16688,7 +16688,7 @@
       "number": "765518", 
       "openUnix": 1413400142, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1422400263, 
@@ -16908,7 +16908,7 @@
       "number": "765860", 
       "openUnix": 1413658272, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1422400263, 
@@ -16998,7 +16998,7 @@
       "number": "765930", 
       "openUnix": 1413717302, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1422400264, 
@@ -17898,7 +17898,7 @@
       "number": "769604", 
       "openUnix": 1416005107, 
       "responses": 3, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1416079504, 
@@ -18168,7 +18168,7 @@
       "number": "771346", 
       "openUnix": 1417197062, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1417926361, 
@@ -18548,7 +18548,7 @@
       "number": "772970", 
       "openUnix": 1418400541, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1418444880, 
@@ -19108,7 +19108,7 @@
       "number": "775284", 
       "openUnix": 1421159762, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1434183422, 
@@ -19521,14 +19521,14 @@
       "state": "dropped"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1435424221, 
+      "closedUnix": 1447954265, 
+      "comments": 9, 
+      "lastUnix": 1447954265, 
       "name": "syncterm/20150627+dfsg-1", 
       "number": "777651", 
       "openUnix": 1423632422, 
-      "responses": 1, 
-      "state": "open"
+      "responses": 6, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1423937520, 
@@ -19678,7 +19678,7 @@
       "number": "779377", 
       "openUnix": 1425071347, 
       "responses": 27, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1437927903, 
@@ -19818,7 +19818,7 @@
       "number": "781066", 
       "openUnix": 1427156101, 
       "responses": 0, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1430783653, 
@@ -20011,23 +20011,23 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 9, 
-      "lastUnix": 1444653482, 
+      "closedUnix": 1447345981, 
+      "comments": 16, 
+      "lastUnix": 1447345981, 
       "name": "complexity/1.2+dfsg-1", 
       "number": "781952", 
       "openUnix": 1428239342, 
-      "responses": 6, 
-      "state": "open"
+      "responses": 11, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 0, 
-      "comments": 18, 
-      "lastUnix": 1446314342, 
+      "comments": 20, 
+      "lastUnix": 1447539541, 
       "name": "ublock/1.1.1+dfsg-1", 
       "number": "782074", 
       "openUnix": 1428409262, 
-      "responses": 10, 
+      "responses": 11, 
       "state": "open"
     }, 
     {
@@ -20132,12 +20132,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 11, 
-      "lastUnix": 1437697325, 
-      "name": "endless-sky/0.8.4-1", 
+      "comments": 15, 
+      "lastUnix": 1448486460, 
+      "name": "endless-sky/0.8.7-1", 
       "number": "782847", 
       "openUnix": 1429382342, 
-      "responses": 6, 
+      "responses": 9, 
       "state": "open"
     }, 
     {
@@ -20291,14 +20291,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 7, 
-      "lastUnix": 1445546941, 
+      "closedUnix": 1447086202, 
+      "comments": 8, 
+      "lastUnix": 1447106883, 
       "name": "xerces-c/3.1.2+debian-1", 
       "number": "784304", 
       "openUnix": 1430801642, 
-      "responses": 3, 
-      "state": "open"
+      "responses": 4, 
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1431958382, 
@@ -20342,12 +20342,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 11, 
-      "lastUnix": 1446195723, 
+      "comments": 14, 
+      "lastUnix": 1446829924, 
       "name": "duperemove/0.10-1", 
       "number": "784898", 
       "openUnix": 1431250922, 
-      "responses": 7, 
+      "responses": 9, 
       "state": "open"
     }, 
     {
@@ -20481,14 +20481,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1432561143, 
+      "closedUnix": 1446395345, 
+      "comments": 2, 
+      "lastUnix": 1446395345, 
       "name": "pychromecast/0.6+20150327git9d14219-1", 
       "number": "786766", 
       "openUnix": 1432554121, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1444753564, 
@@ -20542,12 +20542,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 6, 
-      "lastUnix": 1441898520, 
+      "comments": 7, 
+      "lastUnix": 1446827999, 
       "name": "gambatte/0.5.0+git20150322-1", 
       "number": "787148", 
       "openUnix": 1432879561, 
-      "responses": 5, 
+      "responses": 6, 
       "state": "open"
     }, 
     {
@@ -20621,14 +20621,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 0, 
-      "lastUnix": 0, 
+      "closedUnix": 1446395400, 
+      "comments": 1, 
+      "lastUnix": 1446395400, 
       "name": "guile-reader/0.6.1-1", 
       "number": "787811", 
       "openUnix": 1433501462, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1445099824, 
@@ -20691,14 +20691,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1433888189, 
+      "closedUnix": 1446395345, 
+      "comments": 2, 
+      "lastUnix": 1446395345, 
       "name": "cataclysm-dda/0.C-1", 
       "number": "788254", 
       "openUnix": 1433881261, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1433976481, 
@@ -20721,14 +20721,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1434024002, 
+      "closedUnix": 1446395345, 
+      "comments": 2, 
+      "lastUnix": 1446395345, 
       "name": "chaoticrage/1.14-1", 
       "number": "788407", 
       "openUnix": 1433989981, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1444901340, 
@@ -20841,14 +20841,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 6, 
-      "lastUnix": 1434883140, 
+      "closedUnix": 1447706101, 
+      "comments": 9, 
+      "lastUnix": 1447706101, 
       "name": "ags/0.4.2-78-1", 
       "number": "789451", 
       "openUnix": 1434863342, 
-      "responses": 3, 
-      "state": "open"
+      "responses": 5, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1435587845, 
@@ -20991,14 +20991,14 @@
       "state": "open"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 8, 
-      "lastUnix": 1444563425, 
+      "closedUnix": 1446592323, 
+      "comments": 9, 
+      "lastUnix": 1446592323, 
       "name": "lightdm-gtk-greeter-settings/1.2.0-1", 
       "number": "790104", 
       "openUnix": 1435381381, 
-      "responses": 7, 
-      "state": "open"
+      "responses": 8, 
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1444421700, 
@@ -21042,12 +21042,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 20, 
-      "lastUnix": 1445251802, 
+      "comments": 23, 
+      "lastUnix": 1448907544, 
       "name": "circus/0.12.1+dfsg-1", 
       "number": "790412", 
       "openUnix": 1435568762, 
-      "responses": 12, 
+      "responses": 13, 
       "state": "open"
     }, 
     {
@@ -21071,14 +21071,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1435770747, 
+      "closedUnix": 1447907340, 
+      "comments": 2, 
+      "lastUnix": 1447907340, 
       "name": "mysql-sandbox/3.0.50-1", 
       "number": "790761", 
       "openUnix": 1435763702, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1435776123, 
@@ -21528,7 +21528,7 @@
       "number": "793659", 
       "openUnix": 1437889142, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1438532825, 
@@ -21822,12 +21822,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 7, 
-      "lastUnix": 1441782041, 
+      "comments": 8, 
+      "lastUnix": 1446824766, 
       "name": "tablesnap/0.7.2-1", 
       "number": "796030", 
       "openUnix": 1439917930, 
-      "responses": 4, 
+      "responses": 5, 
       "state": "open"
     }, 
     {
@@ -21938,7 +21938,7 @@
       "number": "796894", 
       "openUnix": 1440512822, 
       "responses": 5, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1440691445, 
@@ -22082,12 +22082,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 11, 
-      "lastUnix": 1445781303, 
+      "comments": 16, 
+      "lastUnix": 1448480943, 
       "name": "panda3d/1.9.0-1", 
       "number": "797888", 
       "openUnix": 1441280346, 
-      "responses": 10, 
+      "responses": 15, 
       "state": "open"
     }, 
     {
@@ -22218,7 +22218,7 @@
       "number": "798990", 
       "openUnix": 1442255221, 
       "responses": 13, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1443175560, 
@@ -22281,23 +22281,23 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 36, 
-      "lastUnix": 1445334001, 
+      "closedUnix": 1446630263, 
+      "comments": 37, 
+      "lastUnix": 1446630263, 
       "name": "eviacam/2.0.3-1", 
       "number": "799205", 
       "openUnix": 1442429826, 
-      "responses": 21, 
-      "state": "open"
+      "responses": 22, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 0, 
-      "comments": 20, 
-      "lastUnix": 1443996954, 
-      "name": "python-ck/1.6.11-1", 
+      "comments": 25, 
+      "lastUnix": 1447256641, 
+      "name": "python-ck/1.6.12-1", 
       "number": "799268", 
       "openUnix": 1442487242, 
-      "responses": 9, 
+      "responses": 11, 
       "state": "open"
     }, 
     {
@@ -22392,12 +22392,12 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1443180542, 
+      "comments": 7, 
+      "lastUnix": 1447942624, 
       "name": "snes9x/", 
       "number": "799813", 
       "openUnix": 1442958482, 
-      "responses": 2, 
+      "responses": 4, 
       "state": "open"
     }, 
     {
@@ -22478,7 +22478,7 @@
       "number": "800561", 
       "openUnix": 1443652381, 
       "responses": 4, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1443779885, 
@@ -22491,14 +22491,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1443880085, 
+      "closedUnix": 1446395400, 
+      "comments": 2, 
+      "lastUnix": 1446395400, 
       "name": "sdcc/3.5.0+dfsg-1", 
       "number": "800759", 
       "openUnix": 1443873061, 
-      "responses": 0, 
-      "state": "open"
+      "responses": 1, 
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1443885511, 
@@ -22522,22 +22522,22 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 4, 
-      "lastUnix": 1444236713, 
+      "comments": 7, 
+      "lastUnix": 1447096698, 
       "name": "smplayer-themes/1:15.6.0-1", 
       "number": "801197", 
       "openUnix": 1444221542, 
-      "responses": 2, 
+      "responses": 4, 
       "state": "open"
     }, 
     {
       "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1444227290, 
-      "name": "smplayer/15.9.0+dfsg-1", 
+      "comments": 7, 
+      "lastUnix": 1447096698, 
+      "name": "smplayer/15.9.0~ds1-1", 
       "number": "801198", 
       "openUnix": 1444221546, 
-      "responses": 1, 
+      "responses": 4, 
       "state": "open"
     }, 
     {
@@ -22668,7 +22668,7 @@
       "number": "801774", 
       "openUnix": 1444827422, 
       "responses": 1, 
-      "state": "dropped"
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1444893484, 
@@ -22901,14 +22901,14 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 2, 
-      "lastUnix": 1445512680, 
+      "closedUnix": 1447777800, 
+      "comments": 4, 
+      "lastUnix": 1447777800, 
       "name": "python-ncclient/0.4.5-1", 
       "number": "802536", 
       "openUnix": 1445373361, 
-      "responses": 1, 
-      "state": "open"
+      "responses": 2, 
+      "state": "accepted"
     }, 
     {
       "closedUnix": 1445675402, 
@@ -22918,7 +22918,7 @@
       "number": "802562", 
       "openUnix": 1445403961, 
       "responses": 2, 
-      "state": "accepted"
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1445608740, 
@@ -22962,32 +22962,32 @@
     }, 
     {
       "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1445687762, 
+      "comments": 4, 
+      "lastUnix": 1446824804, 
       "name": "ultraeasy/1.0-1", 
       "number": "802797", 
       "openUnix": 1445619790, 
-      "responses": 2, 
-      "state": "open"
-    }, 
-    {
-      "closedUnix": 0, 
-      "comments": 7, 
-      "lastUnix": 1446308764, 
-      "name": "gnome-twitch/0.1.0-1", 
-      "number": "802848", 
-      "openUnix": 1445672341, 
       "responses": 3, 
       "state": "open"
     }, 
     {
       "closedUnix": 0, 
-      "comments": 3, 
-      "lastUnix": 1445879105, 
-      "name": "vconnectstand/2.0.1", 
+      "comments": 12, 
+      "lastUnix": 1448821864, 
+      "name": "gnome-twitch/0.1.0-1", 
+      "number": "802848", 
+      "openUnix": 1445672341, 
+      "responses": 5, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 5, 
+      "lastUnix": 1446834782, 
+      "name": "vconnectstand/20151108a-1", 
       "number": "802902", 
       "openUnix": 1445720581, 
-      "responses": 2, 
+      "responses": 3, 
       "state": "open"
     }, 
     {
@@ -23001,24 +23001,24 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 5, 
-      "lastUnix": 1446151802, 
+      "closedUnix": 1446910766, 
+      "comments": 6, 
+      "lastUnix": 1446910766, 
       "name": "conman/0.2.7-1", 
       "number": "803160", 
       "openUnix": 1445956562, 
-      "responses": 2, 
-      "state": "open"
+      "responses": 3, 
+      "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 6, 
-      "lastUnix": 1446137220, 
+      "closedUnix": 1447770245, 
+      "comments": 7, 
+      "lastUnix": 1447770245, 
       "name": "drumgizmo/0.9.8.1-1", 
       "number": "803187", 
       "openUnix": 1445974746, 
-      "responses": 2, 
-      "state": "open"
+      "responses": 3, 
+      "state": "dropped"
     }, 
     {
       "closedUnix": 1446049923, 
@@ -23091,16 +23091,556 @@
       "state": "accepted"
     }, 
     {
-      "closedUnix": 0, 
-      "comments": 1, 
-      "lastUnix": 1446317823, 
+      "closedUnix": 1446392944, 
+      "comments": 2, 
+      "lastUnix": 1446392944, 
       "name": "golang-github-mitchellh-iochan/", 
       "number": "803600", 
       "openUnix": 1446314402, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446561900, 
+      "comments": 5, 
+      "lastUnix": 1446561900, 
+      "name": "afl-cov/0.3-1", 
+      "number": "803620", 
+      "openUnix": 1446340502, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446368282, 
+      "comments": 2, 
+      "lastUnix": 1446368282, 
+      "name": "audiotools/3.1.1-1", 
+      "number": "803623", 
+      "openUnix": 1446354901, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446570122, 
+      "comments": 3, 
+      "lastUnix": 1446570122, 
+      "name": "edge-addition-planarity-suite/", 
+      "number": "803626", 
+      "openUnix": 1446356522, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 5, 
+      "lastUnix": 1446457018, 
+      "name": "opengm/2.3.6-1", 
+      "number": "803674", 
+      "openUnix": 1446398101, 
+      "responses": 2, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1446761426, 
+      "comments": 6, 
+      "lastUnix": 1446764160, 
+      "name": "gox/0.3.0-1", 
+      "number": "803895", 
+      "openUnix": 1446505022, 
+      "responses": 3, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446717528, 
+      "comments": 3, 
+      "lastUnix": 1446717528, 
+      "name": "[update]:/", 
+      "number": "803935", 
+      "openUnix": 1446554166, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447975140, 
+      "comments": 3, 
+      "lastUnix": 1447975140, 
+      "name": "supervisor/3.1.3-1", 
+      "number": "803954", 
+      "openUnix": 1446566942, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446635293, 
+      "comments": 2, 
+      "lastUnix": 1446635293, 
+      "name": "node-string-decoder/0.10.25-1", 
+      "number": "803979", 
+      "openUnix": 1446583862, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1446627615, 
+      "comments": 2, 
+      "lastUnix": 1446627615, 
+      "name": "netmask/2.4.3-1", 
+      "number": "803993", 
+      "openUnix": 1446601861, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 10, 
+      "lastUnix": 1448192761, 
+      "name": "rhythmbox-plugin-alternative-toolbar/0.14.1-1", 
+      "number": "804100", 
+      "openUnix": 1446681421, 
+      "responses": 4, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 8, 
+      "lastUnix": 1448023025, 
+      "name": "libjreen/1.2.0-1", 
+      "number": "804169", 
+      "openUnix": 1446745862, 
+      "responses": 3, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1446829397, 
+      "comments": 5, 
+      "lastUnix": 1446829397, 
+      "name": "node-readable-stream/2.0.3-1", 
+      "number": "804252", 
+      "openUnix": 1446823802, 
+      "responses": 3, 
+      "state": "dropped"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 8, 
+      "lastUnix": 1447847703, 
+      "name": "igb/5.3.3.2-4", 
+      "number": "804283", 
+      "openUnix": 1446846122, 
+      "responses": 5, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1447943642, 
+      "name": "homer/0.26.0~svn3080-1", 
+      "number": "804298", 
+      "openUnix": 1446868081, 
+      "responses": 1, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448620444, 
+      "comments": 9, 
+      "lastUnix": 1448620444, 
+      "name": "libsvm/3.20-0.1", 
+      "number": "804343", 
+      "openUnix": 1446911101, 
+      "responses": 5, 
+      "state": "dropped"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 3, 
+      "lastUnix": 1448464202, 
+      "name": "9wm/1.3.3-1", 
+      "number": "804390", 
+      "openUnix": 1446953582, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 4, 
+      "lastUnix": 1448228880, 
+      "name": "bitz-server/0.1.6-1", 
+      "number": "804413", 
+      "openUnix": 1446971945, 
+      "responses": 2, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1447259282, 
+      "name": "liwc/1.21-2", 
+      "number": "804432", 
+      "openUnix": 1446985621, 
+      "responses": 1, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 3, 
+      "lastUnix": 1448458201, 
+      "name": "publib/0.40-2", 
+      "number": "804433", 
+      "openUnix": 1446985625, 
+      "responses": 2, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1447854360, 
+      "comments": 3, 
+      "lastUnix": 1447854360, 
+      "name": "node-concat-stream/1.5.1-1", 
+      "number": "804451", 
+      "openUnix": 1447002001, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447228802, 
+      "comments": 6, 
+      "lastUnix": 1447228802, 
+      "name": "attic/", 
+      "number": "804506", 
+      "openUnix": 1447029541, 
+      "responses": 3, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1448459103, 
+      "comments": 3, 
+      "lastUnix": 1448459103, 
+      "name": "xtrkcad/1:4.2.1-1", 
+      "number": "804513", 
+      "openUnix": 1447036381, 
+      "responses": 1, 
+      "state": "dropped"
+    }, 
+    {
+      "closedUnix": 1447063184, 
+      "comments": 2, 
+      "lastUnix": 1447063406, 
+      "name": "node-es6-shim/0.33.10+ds-1", 
+      "number": "804524", 
+      "openUnix": 1447059961, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 6, 
+      "lastUnix": 1448476923, 
+      "name": "flashybrid/0.19", 
+      "number": "804644", 
+      "openUnix": 1447136462, 
+      "responses": 5, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1448539201, 
+      "name": "libsass-python/0.9.1-1", 
+      "number": "804697", 
+      "openUnix": 1447173181, 
+      "responses": 1, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1447193523, 
+      "comments": 2, 
+      "lastUnix": 1447193523, 
+      "name": "sfcgal/1.2.1", 
+      "number": "804715", 
+      "openUnix": 1447185962, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447866782, 
+      "comments": 6, 
+      "lastUnix": 1447866782, 
+      "name": "libjdns/2.0.3-1", 
+      "number": "804801", 
+      "openUnix": 1447270741, 
+      "responses": 3, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447664885, 
+      "comments": 12, 
+      "lastUnix": 1447670884, 
+      "name": "inform/6.31.1+dfsg-2", 
+      "number": "804947", 
+      "openUnix": 1447393141, 
+      "responses": 6, 
+      "state": "dropped"
+    }, 
+    {
+      "closedUnix": 1447430522, 
+      "comments": 2, 
+      "lastUnix": 1447430522, 
+      "name": "sfcgal/1.2.1", 
+      "number": "805020", 
+      "openUnix": 1447420142, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 7, 
+      "lastUnix": 1448719200, 
+      "name": "vim-command-t/1.13-2", 
+      "number": "805172", 
+      "openUnix": 1447597261, 
+      "responses": 3, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1447877524, 
+      "comments": 4, 
+      "lastUnix": 1447877524, 
+      "name": "chrony/2.1.1-1", 
+      "number": "805250", 
+      "openUnix": 1447628942, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447778463, 
+      "comments": 2, 
+      "lastUnix": 1447778463, 
+      "name": "arrayfire/3.2.0+dfsg1-1", 
+      "number": "805386", 
+      "openUnix": 1447775462, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 13, 
+      "lastUnix": 1448044442, 
+      "name": "liblastfm/1.0.9-1", 
+      "number": "805393", 
+      "openUnix": 1447779781, 
+      "responses": 7, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1447961284, 
+      "comments": 5, 
+      "lastUnix": 1447961284, 
+      "name": "visualboyadvance/1.8.0.dfsg-3", 
+      "number": "805439", 
+      "openUnix": 1447837021, 
+      "responses": 3, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1447893602, 
+      "name": "dvbcut/0.5.4+svn178-12", 
+      "number": "805511", 
+      "openUnix": 1447890481, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448209805, 
+      "comments": 4, 
+      "lastUnix": 1448209805, 
+      "name": "normaliz/3.0.0+ds-2", 
+      "number": "805521", 
+      "openUnix": 1447911902, 
+      "responses": 3, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1447932303, 
+      "name": "xtrkcad/1:4.2.2-1", 
+      "number": "805528", 
+      "openUnix": 1447919822, 
+      "responses": 1, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1447927264, 
+      "comments": 2, 
+      "lastUnix": 1447927264, 
+      "name": "arrayfire/3.2.0+dfsg1-2", 
+      "number": "805537", 
+      "openUnix": 1447926304, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1447926961, 
+      "comments": 2, 
+      "lastUnix": 1447926961, 
+      "name": "ismrmrd/1.3.2-1", 
+      "number": "805538", 
+      "openUnix": 1447926661, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 4, 
+      "lastUnix": 1448106601, 
+      "name": "plowshare/2.1.2-1", 
+      "number": "805632", 
+      "openUnix": 1448023685, 
+      "responses": 3, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448064420, 
+      "comments": 3, 
+      "lastUnix": 1448064420, 
+      "name": "node-leaflet-hash/0.2.1-1", 
+      "number": "805656", 
+      "openUnix": 1448047622, 
+      "responses": 2, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448063222, 
+      "name": "dbab/1.3.1-1", 
+      "number": "805707", 
+      "openUnix": 1448081462, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448122623, 
+      "name": "[ITP]/", 
+      "number": "805729", 
+      "openUnix": 1448122862, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448269803, 
+      "comments": 2, 
+      "lastUnix": 1448269803, 
+      "name": "arrayfire/3.2.0+dfsg1-3", 
+      "number": "805838", 
+      "openUnix": 1448235902, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 3, 
+      "lastUnix": 1448641924, 
+      "name": "augeas/1.2.0-0.3", 
+      "number": "805855", 
+      "openUnix": 1448273702, 
+      "responses": 1, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448279821, 
+      "comments": 2, 
+      "lastUnix": 1448279821, 
+      "name": "mdadm/3.3.4-1.1", 
+      "number": "805858", 
+      "openUnix": 1448274242, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448393460, 
+      "name": "schedule/0.3.2-1", 
+      "number": "806158", 
+      "openUnix": 1448393585, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448445724, 
+      "name": "python-bibtexparser/0.6.1-1", 
+      "number": "806190", 
+      "openUnix": 1448442361, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 2, 
+      "lastUnix": 1448539445, 
+      "name": "libechonest/2.3.1-0.1", 
+      "number": "806301", 
+      "openUnix": 1448528042, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 1448544962, 
+      "comments": 5, 
+      "lastUnix": 1448571844, 
+      "name": "s3backer/1.4.2-1", 
+      "number": "806311", 
+      "openUnix": 1448535782, 
+      "responses": 4, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 1448638261, 
+      "comments": 2, 
+      "lastUnix": 1448638261, 
+      "name": "dropbear/2015.70-1", 
+      "number": "806330", 
+      "openUnix": 1448555581, 
+      "responses": 1, 
+      "state": "accepted"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448581682, 
+      "name": "jsurf-alggeo/0.3.0+ds-1", 
+      "number": "806389", 
+      "openUnix": 1448578262, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448763900, 
+      "name": "multimail/0.50~20150922-1", 
+      "number": "806572", 
+      "openUnix": 1448782566, 
+      "responses": 0, 
+      "state": "open"
+    }, 
+    {
+      "closedUnix": 0, 
+      "comments": 1, 
+      "lastUnix": 1448923924, 
+      "name": "gmp-ecm/6.4.4+ds-5", 
+      "number": "806754", 
+      "openUnix": 1448920622, 
       "responses": 0, 
       "state": "open"
     }
   ], 
-  "runDate": "Sun, 01 Nov 2015 01:20:21 -0000", 
-  "runUnix": 1446340821.540346
+  "runDate": "Tue, 01 Dec 2015 01:23:39 -0000", 
+  "runUnix": 1448933019.115556
 }
