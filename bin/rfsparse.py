@@ -132,8 +132,19 @@ class RFSList(object):
         for bug in self.bugs:
             yield(bug)
 
+def lineiter(text):
+    line = []
+
+    for char in text:
+        if char == "\n":
+            yield ''.join(line)
+            line = []
+        else:
+            line.append(char)
+
+
 def pkgiter(pkgtext):
-    for line in pkgtext.splitlines():
+    for line in lineiter(pkgtext):
         line = line.rstrip('\n')
 
         if( line[0:len("Source: ")] == "Source: "):
