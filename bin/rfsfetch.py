@@ -6,7 +6,7 @@ import os
 import gzip
 
 
-PKG_URL="http://http.us.debian.org/debian/dists/%s/main/binary-%s/Packages.gz"
+PKG_URL="http://http.us.debian.org/debian/dists/%s/main/binary-%s/Packages.xz"
 
 BUG_URL="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug="
 
@@ -29,10 +29,11 @@ def get_rfs_text(rfsnum):
 def get_package_text(distname, arch):
     url = PKG_URL % (distname, arch)
 
-    cache_file = "tmp/Packages-%s-%s.gz" % (distname, arch)
+    cache_file = "tmp/Packages-%s-%s.xz" % (distname, arch)
     get_cache_object(cache_file, url, False)
 
-    f = gzip.open(cache_file, 'r')
+    os.system("unxz %s" % cache_file)
+    f = open(cache_file[:-3])
     text = f.read()
     f.close()
 
