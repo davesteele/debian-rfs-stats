@@ -60,9 +60,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 42, 
+    "accepted": 43, 
     "dateStr": "6/2012", 
-    "dropped": 47, 
+    "dropped": 46, 
     "endu": 1341100800, 
     "mdbr": 14.144073628917377, 
     "month": 6, 
@@ -516,9 +516,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 40, 
+    "accepted": 39, 
     "dateStr": "8/2015", 
-    "dropped": 18, 
+    "dropped": 19, 
     "endu": 1441065600, 
     "mdbr": 13.513865740740739, 
     "month": 8, 
@@ -528,9 +528,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 45, 
+    "accepted": 46, 
     "dateStr": "9/2015", 
-    "dropped": 13, 
+    "dropped": 12, 
     "endu": 1443657600, 
     "mdbr": 7.80114983974359, 
     "month": 9, 
@@ -708,26 +708,26 @@
     "year": 2016
   }, 
   {
-    "accepted": 120, 
+    "accepted": 119, 
     "dateStr": "12/2016", 
     "dropped": 13, 
     "endu": 1483228800, 
     "mdbr": 7.047455779297535, 
     "month": 12, 
-    "new": 130, 
+    "new": 129, 
     "open": 68, 
     "startu": 1480550400, 
     "year": 2016
   }, 
   {
-    "accepted": 74, 
+    "accepted": 73, 
     "dateStr": "1/2017", 
-    "dropped": 11, 
+    "dropped": 13, 
     "endu": 1485907200, 
-    "mdbr": 9.58985108406674, 
+    "mdbr": 9.45928842363403, 
     "month": 1, 
     "new": 79, 
-    "open": 62, 
+    "open": 61, 
     "startu": 1483228800, 
     "year": 2017
   }, 
@@ -736,23 +736,35 @@
     "dateStr": "2/2017", 
     "dropped": 4, 
     "endu": 1488326400, 
-    "mdbr": 17.84203425068587, 
+    "mdbr": 17.58277499142661, 
     "month": 2, 
     "new": 38, 
-    "open": 68, 
+    "open": 67, 
     "startu": 1485907200, 
     "year": 2017
   }, 
   {
-    "accepted": 22, 
+    "accepted": 23, 
     "dateStr": "3/2017", 
-    "dropped": 11, 
+    "dropped": 9, 
     "endu": 1491004800, 
-    "mdbr": 21.869391142787524, 
+    "mdbr": 21.224049229725413, 
     "month": 3, 
-    "new": 52, 
-    "open": 87, 
+    "new": 51, 
+    "open": 86, 
     "startu": 1488326400, 
+    "year": 2017
+  }, 
+  {
+    "accepted": 38, 
+    "dateStr": "4/2017", 
+    "dropped": 16, 
+    "endu": 1493596800, 
+    "mdbr": 15.868991075779727, 
+    "month": 4, 
+    "new": 47, 
+    "open": 79, 
+    "startu": 1491004800, 
     "year": 2017
   }
 ]
