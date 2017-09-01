@@ -48,9 +48,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 42, 
+    "accepted": 44, 
     "dateStr": "5/2012", 
-    "dropped": 29, 
+    "dropped": 27, 
     "endu": 1338508800, 
     "mdbr": 25.10948943865741, 
     "month": 5, 
@@ -72,9 +72,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 22, 
+    "accepted": 24, 
     "dateStr": "7/2012", 
-    "dropped": 21, 
+    "dropped": 19, 
     "endu": 1343779200, 
     "mdbr": 29.005619001757232, 
     "month": 7, 
@@ -96,9 +96,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 24, 
+    "accepted": 23, 
     "dateStr": "9/2012", 
-    "dropped": 16, 
+    "dropped": 17, 
     "endu": 1349049600, 
     "mdbr": 46.726189639006094, 
     "month": 9, 
@@ -144,9 +144,9 @@
     "year": 2012
   }, 
   {
-    "accepted": 13, 
+    "accepted": 14, 
     "dateStr": "1/2013", 
-    "dropped": 15, 
+    "dropped": 14, 
     "endu": 1359676800, 
     "mdbr": 34.81563229669887, 
     "month": 1, 
@@ -168,9 +168,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 28, 
+    "accepted": 27, 
     "dateStr": "3/2013", 
-    "dropped": 23, 
+    "dropped": 24, 
     "endu": 1364774400, 
     "mdbr": 33.47421718155071, 
     "month": 3, 
@@ -204,9 +204,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 13, 
+    "accepted": 12, 
     "dateStr": "6/2013", 
-    "dropped": 13, 
+    "dropped": 14, 
     "endu": 1372636800, 
     "mdbr": 35.31785065628816, 
     "month": 6, 
@@ -216,9 +216,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 15, 
+    "accepted": 16, 
     "dateStr": "7/2013", 
-    "dropped": 19, 
+    "dropped": 18, 
     "endu": 1375315200, 
     "mdbr": 42.49281680663221, 
     "month": 7, 
@@ -264,9 +264,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 29, 
+    "accepted": 30, 
     "dateStr": "11/2013", 
-    "dropped": 21, 
+    "dropped": 20, 
     "endu": 1385856000, 
     "mdbr": 30.550396947873804, 
     "month": 11, 
@@ -288,9 +288,9 @@
     "year": 2013
   }, 
   {
-    "accepted": 53, 
+    "accepted": 54, 
     "dateStr": "1/2014", 
-    "dropped": 31, 
+    "dropped": 30, 
     "endu": 1391212800, 
     "mdbr": 18.580887914230022, 
     "month": 1, 
@@ -300,9 +300,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 40, 
+    "accepted": 41, 
     "dateStr": "2/2014", 
-    "dropped": 27, 
+    "dropped": 26, 
     "endu": 1393632000, 
     "mdbr": 21.78875377593906, 
     "month": 2, 
@@ -312,9 +312,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 42, 
+    "accepted": 43, 
     "dateStr": "3/2014", 
-    "dropped": 23, 
+    "dropped": 22, 
     "endu": 1396310400, 
     "mdbr": 32.23279831608569, 
     "month": 3, 
@@ -336,9 +336,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 36, 
+    "accepted": 37, 
     "dateStr": "5/2014", 
-    "dropped": 14, 
+    "dropped": 13, 
     "endu": 1401580800, 
     "mdbr": 26.723214646464644, 
     "month": 5, 
@@ -372,9 +372,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 55, 
+    "accepted": 54, 
     "dateStr": "8/2014", 
-    "dropped": 35, 
+    "dropped": 36, 
     "endu": 1409529600, 
     "mdbr": 8.518297654576063, 
     "month": 8, 
@@ -384,9 +384,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 41, 
+    "accepted": 40, 
     "dateStr": "9/2014", 
-    "dropped": 26, 
+    "dropped": 27, 
     "endu": 1412121600, 
     "mdbr": 9.106584694013009, 
     "month": 9, 
@@ -396,9 +396,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 72, 
+    "accepted": 73, 
     "dateStr": "10/2014", 
-    "dropped": 32, 
+    "dropped": 31, 
     "endu": 1414800000, 
     "mdbr": 13.540741289511494, 
     "month": 10, 
@@ -408,9 +408,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 30, 
+    "accepted": 29, 
     "dateStr": "11/2014", 
-    "dropped": 23, 
+    "dropped": 24, 
     "endu": 1417392000, 
     "mdbr": 28.513548280423283, 
     "month": 11, 
@@ -432,9 +432,9 @@
     "year": 2014
   }, 
   {
-    "accepted": 47, 
+    "accepted": 45, 
     "dateStr": "1/2015", 
-    "dropped": 18, 
+    "dropped": 20, 
     "endu": 1422748800, 
     "mdbr": 24.213748272526256, 
     "month": 1, 
@@ -456,9 +456,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 22, 
+    "accepted": 21, 
     "dateStr": "3/2015", 
-    "dropped": 11, 
+    "dropped": 12, 
     "endu": 1427846400, 
     "mdbr": 32.03003391472868, 
     "month": 3, 
@@ -516,9 +516,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 41, 
+    "accepted": 39, 
     "dateStr": "8/2015", 
-    "dropped": 17, 
+    "dropped": 19, 
     "endu": 1441065600, 
     "mdbr": 13.513865740740739, 
     "month": 8, 
@@ -564,9 +564,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 57, 
+    "accepted": 58, 
     "dateStr": "12/2015", 
-    "dropped": 17, 
+    "dropped": 16, 
     "endu": 1451606400, 
     "mdbr": 7.994721621680643, 
     "month": 12, 
@@ -576,9 +576,9 @@
     "year": 2015
   }, 
   {
-    "accepted": 74, 
+    "accepted": 76, 
     "dateStr": "1/2016", 
-    "dropped": 19, 
+    "dropped": 17, 
     "endu": 1454284800, 
     "mdbr": 7.052172351579521, 
     "month": 1, 
@@ -588,9 +588,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 43, 
+    "accepted": 42, 
     "dateStr": "2/2016", 
-    "dropped": 11, 
+    "dropped": 12, 
     "endu": 1456790400, 
     "mdbr": 12.347239583333334, 
     "month": 2, 
@@ -600,9 +600,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 89, 
+    "accepted": 88, 
     "dateStr": "3/2016", 
-    "dropped": 14, 
+    "dropped": 15, 
     "endu": 1459468800, 
     "mdbr": 9.003982887239465, 
     "month": 3, 
@@ -612,9 +612,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 76, 
+    "accepted": 77, 
     "dateStr": "4/2016", 
-    "dropped": 16, 
+    "dropped": 15, 
     "endu": 1462060800, 
     "mdbr": 7.193419170797191, 
     "month": 4, 
@@ -624,9 +624,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 119, 
+    "accepted": 120, 
     "dateStr": "5/2016", 
-    "dropped": 19, 
+    "dropped": 18, 
     "endu": 1464739200, 
     "mdbr": 6.090442000630662, 
     "month": 5, 
@@ -636,9 +636,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 84, 
+    "accepted": 85, 
     "dateStr": "6/2016", 
-    "dropped": 32, 
+    "dropped": 31, 
     "endu": 1467331200, 
     "mdbr": 5.5473590208101085, 
     "month": 6, 
@@ -660,9 +660,9 @@
     "year": 2016
   }, 
   {
-    "accepted": 89, 
+    "accepted": 90, 
     "dateStr": "8/2016", 
-    "dropped": 11, 
+    "dropped": 10, 
     "endu": 1472688000, 
     "mdbr": 5.051898005843959, 
     "month": 8, 
@@ -744,9 +744,9 @@
     "year": 2017
   }, 
   {
-    "accepted": 23, 
+    "accepted": 22, 
     "dateStr": "3/2017", 
-    "dropped": 9, 
+    "dropped": 10, 
     "endu": 1491004800, 
     "mdbr": 20.956807850415068, 
     "month": 3, 
@@ -756,9 +756,9 @@
     "year": 2017
   }, 
   {
-    "accepted": 40, 
+    "accepted": 39, 
     "dateStr": "4/2017", 
-    "dropped": 13, 
+    "dropped": 14, 
     "endu": 1493596800, 
     "mdbr": 15.73743009868421, 
     "month": 4, 
@@ -768,9 +768,9 @@
     "year": 2017
   }, 
   {
-    "accepted": 39, 
+    "accepted": 38, 
     "dateStr": "5/2017", 
-    "dropped": 8, 
+    "dropped": 9, 
     "endu": 1496275200, 
     "mdbr": 34.23683288710397, 
     "month": 5, 
@@ -780,9 +780,9 @@
     "year": 2017
   }, 
   {
-    "accepted": 59, 
+    "accepted": 60, 
     "dateStr": "6/2017", 
-    "dropped": 6, 
+    "dropped": 5, 
     "endu": 1498867200, 
     "mdbr": 23.79988732589427, 
     "month": 6, 
@@ -792,15 +792,27 @@
     "year": 2017
   }, 
   {
-    "accepted": 71, 
+    "accepted": 85, 
     "dateStr": "7/2017", 
-    "dropped": 28, 
+    "dropped": 13, 
     "endu": 1501545600, 
-    "mdbr": 15.45260467479675, 
+    "mdbr": 15.455382396115628, 
     "month": 7, 
     "new": 112, 
-    "open": 103, 
+    "open": 104, 
     "startu": 1498867200, 
+    "year": 2017
+  }, 
+  {
+    "accepted": 57, 
+    "dateStr": "8/2017", 
+    "dropped": 20, 
+    "endu": 1504224000, 
+    "mdbr": 15.137087984596747, 
+    "month": 8, 
+    "new": 80, 
+    "open": 107, 
+    "startu": 1501545600, 
     "year": 2017
   }
 ]
