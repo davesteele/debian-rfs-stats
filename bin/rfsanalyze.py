@@ -45,7 +45,10 @@ def monthly_stats(db):
         stats['accepted'] = len([x for x in closed if rfsdb.rfs_state(db, x.num) == 'accepted'])
         stats['dropped']  = len([x for x in closed if rfsdb.rfs_state(db, x.num) == 'dropped'])
 
-        stats['mdbr'] = (1.0*rfsdb.rfs_days_between(db, start, end))/rfsdb.responses_between(db, start, end).count()
+        try:
+            stats['mdbr'] = (1.0*rfsdb.rfs_days_between(db, start, end))/rfsdb.responses_between(db, start, end).count()
+        except ZeroDivisionError:
+            stats['mdbr'] = 0
 
     return(returnval)
 
