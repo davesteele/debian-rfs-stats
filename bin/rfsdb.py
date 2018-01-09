@@ -141,6 +141,7 @@ def update_package_lists(db):
     session = db()
 
     for dist in session.query(Dist).all():
+        pkgtext = None
         pkgtext = rfsfetch.get_package_text(dist.name, dist.arch)
 
         textsha = rfsparse.hash(pkgtext)
